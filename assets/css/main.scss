@@ -1,0 +1,4412 @@
+/* ==============
+      Template name : Jiony - Creative Agency Bootstrap-5 HTML Template
+      Author : EgensLab.
+      Version : 
+      Created : 
+      Last update : 
+      ================= */
+
+
+/* CSS Index 
+-----------------------------------
+    1. Google Font
+    2. Bootstrap Icons
+    3. Font Family
+    4. Color variable
+    5. All Extend in here
+    6. Reusable Components 
+    7. preloader
+    8. slider Nav 
+    9. slider dots
+    11. Service card Item_2
+    12. Portfolio isotope grid css
+    13. Blog box CSS
+    14. page-navigation
+    15. SCROLL UP BTN
+    16. Top Header area
+    17. header-area
+    18. Nav Menu CSS
+    19. slider area
+    20. Service area
+    21. About Us area
+    22. Counter Area
+    23. Project Area Start
+    24. Start working area Css
+    25. Start Skill area Css
+    26. Start Testimonial area
+    27. Start Team area
+    28. Start Client slider area
+    29. Start Blog area
+    30. Start Newsletter area
+    32. Copy Right
+    33. START HOME PAGE TWO AREA
+    34. Home2 header-area
+    35. Home2 slider area
+    36. BREADCRUMBS AREA
+    37. START SERVICES PAGE AREA
+    38. START ERROR PAGE AREA
+    39. START TEAM PAGE AREA
+    40. START LATEST BLOG PAGE AREA
+    41. START FAQ PAGE AREA
+    42. START BLOG SIDEBAR PAGE AREA
+    43. START BLOG STANDARD PAGE AREA
+    44. START BLOG DETAILS PAGE AREA
+    45. START CONTACT PAGE AREA
+    46. START CASE DETAILS PAGE AREA
+
+
+-----------------------------------*/
+/*--- 1. Google Font ---*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* 2. Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+/*--- 3. Font Family ---*/
+$primary-font: "Rubik",
+sans-serif;
+$secondary-font: "Poppins",
+sans-serif;
+/*--- 4. Color variable ---*/
+$primary-color: #fec01f;
+$secondary-color: #262339;
+$tertiary-color: #ffffff;
+$desc-color: #7a7a7a;
+$bg-color: #F5F5F5;
+
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: $primary-font;
+    background: #e6e6e6;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+
+
+input,
+.btn,
+.button,
+.btn:focus,
+textarea,
+:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+
+/*--- 5. All Extend in here ---*/
+
+%menu-style {
+    display: block;
+    color: $secondary-color;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: $primary-font;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem 0;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+%section-menu {
+    font-size: 1.8rem;
+    font-family: $primary-font;
+    line-height: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: $secondary-color;
+    padding: 0.5rem 1.5rem;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+%top-btn {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    background: $primary-color;
+    border-radius: 5rem;
+    color: $tertiary-color;
+    // opacity: 0.85;
+    transition: all 0.3s ease-in-out;
+    min-width: 100%;
+    line-height: 2.8rem;
+    letter-spacing: 0.75px;
+    padding: 0.7rem 0;
+}
+
+%social-icon {
+    font-size: 2rem;
+    color: $tertiary-color;
+    background: transparent;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    margin: 0;
+    &:hover {
+        color: #83d2e4;
+    }
+}
+
+%home2-social-icon {
+    font-size: 1.6rem;
+    color: $tertiary-color;
+    background: transparent;
+    padding: 0 0.5rem;
+    vertical-align: middle;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border-right: 0.1rem solid $primary-color;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+%team-social-icon {
+    font-size: 2rem;
+    color: $secondary-color;
+    background: transparent;
+    padding: 1rem;
+    margin: 0;
+    border: 0.2rem solid $primary-color;
+    vertical-align: middle;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 90%;
+    &:hover {
+        background-color: transparent;
+        color: $secondary-color;
+        border-color: $tertiary-color;
+    }
+}
+
+%btn-style-one {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: $primary-color;
+    border-radius: 5rem;
+    border: 0.1rem solid $primary-color;
+    color: $tertiary-color;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    line-height: 2.8rem;
+    letter-spacing: 0.75px;
+    padding: 0.7rem 3rem;
+}
+
+%btn-style-tw {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: transparent;
+    border-radius: 5rem;
+    color: $primary-color;
+    border: 0.1rem solid $primary-color;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    line-height: 2.8rem;
+    letter-spacing: 0.75px;
+    padding: 0.7rem 3rem;
+}
+
+%read-more-btn {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: $secondary-color;
+}
+
+%modal-close-btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 3rem;
+    border-radius: 3rem;
+    color: $secondary-color;
+    background: $primary-color;
+    border: 0.2rem solid $primary-color;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: $tertiary-color;
+        background: $secondary-color;
+    }
+}
+
+%slider-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 9.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: $tertiary-color;
+    margin-bottom: 2.5rem;
+    span {
+        color: $primary-color;
+    }
+}
+
+%slider-desc {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    text-align: center;
+    color: $tertiary-color;
+    max-width: 94.2rem;
+    margin: 0 auto;
+}
+
+%section-top-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+}
+
+%section-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    color: $secondary-color;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+%section-inner-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.75px;
+    text-transform: capitalize;
+    color: $secondary-color;
+}
+
+%profile-title1 {
+    font-style: normal;
+    text-transform: capitalize;
+    color: $secondary-color;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+%profile-title2 {
+    font-style: normal;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+%card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.4rem;
+    text-transform: capitalize;
+    color: $secondary-color;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+%blog-inner-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    text-transform: capitalize;
+    color: #1a2238;
+}
+
+%section-top-inner-desc {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: $desc-color;
+    max-width: 57rem;
+    margin: 0 auto;
+}
+
+%inner-desc {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: $desc-color;
+    margin: 0;
+}
+
+%footer-desc {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: $tertiary-color;
+    margin: 2.5rem 0;
+    padding-right: 2rem;
+}
+
+%icon-style {
+    font-size: 5rem;
+    background: $primary-color;
+    color: $tertiary-color;
+    border-radius: 5rem;
+    padding: 2rem;
+    vertical-align: middle;
+    margin-right: 1.2rem;
+}
+
+%service-icon-style {
+    font-size: 7rem;
+    color: $tertiary-color;
+    vertical-align: middle;
+    position: absolute;
+    padding: 1rem;
+    right: 0;
+    top: 0;
+    background: transparent;
+}
+
+%indicator {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.75px;
+    color: $secondary-color;
+}
+
+%checkbox {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: $tertiary-color;
+    border-radius: 5rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+    color: $primary-color;
+}
+
+%about-duration {
+    background: $primary-color;
+    min-width: 13rem;
+    min-height: 13rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 50rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: -25px -20px 0px -10px rgba(254, 191, 31, 0.3);
+}
+
+%duration-span {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 3.2rem;
+    color: $tertiary-color;
+}
+
+%duration-text {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: $tertiary-color;
+}
+
+%footer-social-icon {
+    font-size: 2rem;
+    color: $primary-color;
+    background: transparent;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    margin-right: 1.5rem;
+    vertical-align: middle;
+    border: 0.1rem solid $primary-color;
+    transition: all 0.3s ease-in-out;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    &:hover {
+        background-color: $primary-color;
+        color: $tertiary-color;
+    }
+}
+
+
+/* Modal Extend Here */
+
+%modal-overlay {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    z-index: -10;
+    text-align: center;
+}
+
+%modal-container {
+    width: 80%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    position: relative;
+    background: #FFF;
+    text-align: center;
+}
+
+%close-btn-style {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    &:hover i::before {
+        color: #FFF;
+        background: $secondary-color;
+    }
+}
+
+
+
+%close-btn-inner-style {
+    font-weight: 800 !important;
+    font-size: 2rem;
+    color: $secondary-color;
+    padding: 1rem;
+    border-radius: 90%;
+    background: $primary-color;
+    border: 0.2rem solid $primary-color;
+}
+
+
+/* Modal Extend Css End */
+
+
+/*========== START Reusable Components ============*/
+
+
+/*--- 6. Reusable Components  ---*/
+
+.section-padding {
+    padding: 6rem 0;
+}
+
+.section-top {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: $primary-font;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+button:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/*--- 7. preloader ---*/
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: #d8d8d8;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    vertical-align: center;
+}
+
+.preloader .loader {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.preloader .loader>div {
+    height: 100%;
+    width: 10px;
+    display: inline-block;
+    margin-left: 2px;
+    animation: delay 0.8s infinite ease-in-out;
+}
+
+.preloader .loader .bar {
+    border-radius: 50px;
+    width: 10px;
+    height: 30px;
+    margin: 5px;
+}
+
+.preloader .loader .bar1 {
+    background-color: $primary-color;
+}
+
+.preloader .loader .bar2 {
+    background-color: $secondary-color;
+    animation-delay: -0.7s;
+}
+
+.preloader .loader .bar3 {
+    background-color: #707070;
+    animation-delay: -0.6s;
+}
+
+.preloader .loader .bar4 {
+    background-color: $primary-color;
+    animation-delay: -0.5s;
+}
+
+.preloader .loader .bar5 {
+    background-color: $secondary-color;
+    animation-delay: -0.4s;
+}
+
+.preloader .loader .bar6 {
+    background-color: $primary-color;
+    animation-delay: -0.3s;
+}
+
+@-webkit-keyframes delay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(1);
+    }
+    20% {
+        transform: scaleY(1.5);
+    }
+}
+
+@keyframes delay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(1);
+    }
+    20% {
+        transform: scaleY(1.5);
+    }
+}
+
+
+/*--- Preloader CSS END ---*/
+
+
+/*========== 8. slider Nav ============*/
+
+.owl-carousel {
+    .owl-nav {
+        text-align: center;
+        position: relative;
+        bottom: 1.5rem;
+        width: 100%;
+        backface-visibility: hidden;
+        text-align: center;
+        margin-top: 6.5rem;
+        justify-content: center;
+        display: flex;
+        margin-right: 2rem;
+        .owl-prev,
+        .owl-next {
+            margin: 0 2rem;
+            width: 1.3rem;
+            height: 1.3rem;
+            background: $secondary-color;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        button {
+            i:before {
+                font-size: 1.6rem;
+                color: $tertiary-color;
+                padding: 1rem;
+                background: $primary-color;
+                border-radius: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+/*=== slider Nav END ===*/
+
+/*=== 9. slider dots ===*/
+.owl-carousel {
+    .owl-dots {
+        text-align: center;
+        position: relative;
+        bottom: 5px;
+        width: 100%;
+        backface-visibility: hidden;
+        text-align: center;
+        margin-top: -7.5rem;
+        justify-content: center;
+        display: flex;
+        margin-right: 2rem;
+        .owl-dot {
+            margin: 0 1.5rem 4rem;
+            width: 1.3rem;
+            height: 1.3rem;
+            background: $primary-color;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .active {
+            background: $primary-color;
+            position: relative;
+            &::before {
+                content: "";
+                height: 2.1rem;
+                width: 2.1rem;
+                border: 1px solid $primary-color;
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+                border-radius: 100%;
+                top: -4px;
+                left: -4px;
+            }
+            &::after {
+                content: "";
+                height: 2.9rem;
+                width: 2.9rem;
+                border: 1px solid $primary-color;
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+                border-radius: 100%;
+                top: -8px;
+                left: -8px;
+            }
+        }
+    }
+}
+/*=== slider dots END ===*/
+
+/*=== 10. Service card Item === */
+.card-item {
+    padding: 1.5rem;
+    border-bottom: 0.3rem solid $primary-color;
+    border-left: 0.3rem solid $primary-color;
+    // margin-right: 1rem;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    &:hover {
+        background: $primary-color;
+        
+        &::before {
+            opacity: 1;
+        }
+
+        .card-top {
+            &::before {
+                opacity: 0;
+            }
+            &::after {
+                opacity: 1;
+            }
+    
+            i::before {
+                background: $tertiary-color;
+                color: $primary-color;
+            }
+            h3 {
+                color: $tertiary-color;
+            }
+        }
+        .card-bottom {
+            p {
+                color: $tertiary-color;
+            }
+        }
+        a {
+            opacity: 1;
+        }
+    }
+    &::before {
+        content: "";
+        height: 4.6rem;
+        width: 6.6rem;
+        background-image: url(../images/service1-shape.png);
+        z-index: 0;
+        position: absolute;
+        right: -0.3rem;
+        bottom: -0.3rem;
+        background-repeat: no-repeat;
+        opacity: 0;
+    }
+    .card-top {
+        display: flex;
+        align-items: center;
+        min-height: 8rem;
+        position: relative;
+
+        &::before {
+            background-image: url(../images/services-icon-shape.png);
+            content: "";
+            position: absolute;
+            left: 1.5rem;
+            top: 1rem;
+            z-index: 999;
+            width: 8.5rem;
+            height: 7.9rem;
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+        &::after {
+            background-image: url(../images/services-icon-shape2.png);
+            content: "";
+            position: absolute;
+            left: 1.5rem;
+            top: 1rem;
+            z-index: 999;
+            width: 8.5rem;
+            height: 7.9rem;
+            background-repeat: no-repeat;
+            opacity: 0;
+        }
+        i::before {
+            @extend %icon-style;
+            font-size: 4rem;
+        }
+        h3 {
+            @extend %section-inner-title;
+        }
+    }
+    .card-bottom {
+        position: relative;
+        p {
+            @extend %inner-desc;
+            padding-top: 1rem;
+        }
+    }
+    a {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        i::before {
+            padding: 1rem 1.5rem;
+            font-size: 2rem;
+            font-weight: 600 !important;
+            color: #262339;
+        }
+    }
+}
+/*=== Service card Item End === */
+
+/*=== 11. Service card Item_2 === */
+.card-item2 {
+    padding: 1.5rem 1rem;
+    border: 0.1rem solid $primary-color;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 3rem;
+    position: relative;
+    &::before {
+        content: '';
+        height: 11.2rem;
+        width: 14.5rem;
+        background-image: url(../images/home2-service-shape.png);
+        z-index: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-repeat: no-repeat;
+    }
+    &::after {
+        content: '';
+        height: 5.1rem;
+        width: 7rem;
+        background-image: url(../images/home2-service-bttm-shape.png);
+        z-index: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+        a {
+            opacity: 1;
+        }
+    }
+    .card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        i::before {
+            @extend %service-icon-style;
+            font-size: 6rem;
+            padding: 0;
+            margin: 0 2rem;
+        }
+        h3 {
+            @extend %section-inner-title;
+            margin-top: 2rem;
+        }
+    }
+    .card-bottom {
+        position: relative;
+        p {
+            @extend %inner-desc;
+            max-width: 30rem;
+            padding: 2rem 0;
+        }
+        .indicator-area {
+            h5 {
+                @extend %indicator;
+                margin-bottom: 0.5rem;
+                span i::before {
+                    // @extend %checkbox;
+                    color: $primary-color;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+    a {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        i::before {
+            padding: 1rem 2rem;
+            font-size: 1.8rem;
+            font-weight: 600 !important;
+            color: $tertiary-color;
+        }
+    }
+}
+/*=== Service card Item_2 End === */
+
+/*=== 12. Portfolio isotope grid css ===*/
+.element-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    img {
+        width: 100%;
+    }
+    .caption {
+        position: absolute;
+        bottom: 0;
+        left: 6px;
+        background-color: $primary-color;
+        width: 96%;
+        color: $secondary-color;
+        height: 0;
+        overflow: hidden;
+        border-radius: 60% 60% 0% 0%/90% 90% 0% 0%;
+        // flex-flow: row wrap;
+        justify-content: center;
+        // align-items: center;
+        transition: all 0.3s ease-out;
+        text-align: center;
+        h4 {
+            @extend %card-title;
+        }
+        p {
+            @extend %inner-desc;
+            color: $secondary-color;
+            margin-bottom: 2rem;
+        }
+        a i:before {
+            padding: 1.5rem 2.5rem;
+            background: #fff;
+            border-radius: 60% 60% 0% 0%/90% 90% 0% 0%;
+            font-size: 2rem;
+            font-weight: 600 !important;
+            color: $secondary-color;
+        }
+    }
+}
+/*=== Project item grid css End ===*/
+
+/*=== 13. Blog box CSS ===*/
+.blog-box {
+    padding: 1rem;
+    border: 0.1rem solid $primary-color;
+    border-radius: 0.3rem;
+    margin-bottom: 3rem;
+    &:hover {
+        .inner-img {
+            img {
+                transform: scale(1.07);
+            }
+        }
+        // .blog-ribbon {
+        //     bottom: -1rem;
+        // }
+        .inner-content {
+            .blog-text {
+                h5 a {
+                    color: $primary-color;
+                }
+                a.btn-readMore {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .inner-img {
+        text-align: center;
+        min-width: 40%;
+        position: relative;
+        figure {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+        img {
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+        .blog-ribbon {
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            background: #fff;
+            padding: 0.5rem 2.5rem 0 2.5rem;
+            border-radius: 30% 30% 0% 0%/100% 100% 0% 0%;
+            text-transform: capitalize;
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .inner-content {
+        margin-left: 1rem;
+        .content-top {
+            span.date-of-calendar,
+            span.comment {
+                font-family: $primary-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.2rem;
+                color: $desc-color;
+                i:before {
+                    vertical-align: middle;
+                    font-size: 1rem;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+        .blog-text {
+            h5 {
+                margin: 1.5rem 0;
+                a {
+                    @extend %blog-inner-title;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            p {
+                @extend %inner-desc;
+                margin-bottom: 2rem;
+            }
+            a.btn-readMore {
+                @extend %read-more-btn;
+                transition: all 0.3s ease-in-out;
+                i:before {
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+/*=== Blog box CSS END ===*/
+
+/*=== 13. Blog box CSS ===*/
+.blog-card {
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 5rem;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        .blog-img {
+            img {
+                transform: scale(1.05);
+            }
+        }
+        .blog-footer {
+            .card-title {
+                color: $primary-color;
+            }
+        }
+    }
+    .blog-img {
+        margin: 0;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        min-height: 2rem;
+        img {
+            transition: all 0.3s ease-in-out;
+            min-width: 100%;
+            height: 100%;
+
+        }
+        span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: $primary-color;
+            padding: 1rem 3rem;
+            border-radius: 10rem 0 0 0;
+            color: $tertiary-color;
+        }
+    }
+    .blog-footer {
+        background-color: $bg-color;
+        z-index: 99999;
+        padding: 3rem 2.5rem;
+ 
+        .card-details {
+            a {
+                font-family: $primary-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                display: flex;
+                align-items: center;
+                color: $desc-color;
+                i:before {
+                    margin-right: 0.5rem;
+                    vertical-align: middle;
+                    // font-size: 1rem;
+                    display: flex;
+                    align-items: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .card-title {
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            display: flex;
+            align-items: center;
+            color: $secondary-color;
+            margin-top: 2rem;
+            transition: all 0.3s ease-in-out;
+        }
+        .card-btn {
+            margin-top: 2rem;
+            padding: 0;
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            color: $secondary-color;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $primary-color;
+            }
+            i:before {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #fec01f;
+    margin-bottom: 10rem;
+    border-radius: 90%;
+    min-width: 20rem;
+    min-height: 20rem;
+    position: relative;
+    border: 0.2rem solid $primary-color;
+    z-index: 999;
+    padding: 2.5rem;
+    &:hover {
+        background: $tertiary-color;
+        span {
+            background: $primary-color;
+            color: $tertiary-color;
+        }
+        i:before {
+            color: $primary-color;
+        }
+        p {
+            color: $secondary-color;
+        }
+    }
+    span {
+        color: $secondary-color;
+        background: $tertiary-color;
+        font-family: $primary-font;
+        font-size: 1.6rem;
+        font-weight: 500;
+        width: 4rem;
+        height: 4rem;
+        padding: 0.3rem;
+        border-radius: 5rem;
+        border: 0.1rem solid $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+    i {
+        margin-top: 3rem;
+        // margin-bottom: 1.5rem;
+        &:before {
+            @extend %icon-style;
+            background: transparent;
+            font-size: 5rem;
+            margin: 0;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    p {
+        @extend %section-menu;
+        padding: 0;
+        color: $tertiary-color;
+        transition: all 0.3s ease-in-out;
+        margin: 1.5rem 0;
+    }
+}
+
+.icon__bx {
+    span {
+        left: 40%;
+        top: -2rem;
+    }
+}
+/*=== Blog card CSS END ===*/
+
+/*== 14. page-navigation */
+.page-navigation {
+    margin-bottom: 3rem;
+    ul.pagination {
+        li.page-item {
+            margin-right: 1.5rem;
+            a.page-link {
+                border: none;
+                box-shadow: none;
+                outline: none;
+                font-weight: 700;
+                background: $tertiary-color;
+                color: $secondary-color;
+                font-size: 2rem;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    // background: transparent;
+                    color: $primary-color;
+                }
+                i:before {
+                    font-size: 1.4rem;
+                    padding: 1rem;
+                    border-radius: 5rem;
+                    background: $primary-color;
+                    color: $tertiary-color;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background: $secondary-color;
+                    }
+                }
+            }
+            a.active {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+/*====== 15. SCROLL UP BTN =======*/
+.scroll_up {
+    background: $primary-color;
+    color: $tertiary-color;
+    cursor: pointer;
+    display: none;
+    padding: 0.6rem 0.8rem;
+    position: fixed;
+    z-index: 9;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 5rem;
+    transition: all 0.3s ease-in-out;
+    border: 0.3rem solid $primary-color;
+}
+
+.scroll_up:hover {
+    background: $secondary-color;
+    // box-shadow: 0 0.5rem 1rem 0 rgba(254, 191, 31, 0.5) !important;
+}
+
+.scroll_up i {
+    font-size: 2.2rem;
+}
+/*========== END Reusable Components ============*/
+
+
+/*--- 16. Top Header area ---*/
+.header-top {
+    background: $primary-color;
+    padding: 1.5rem 0;
+    ul.topbar-social-icon {
+        padding: 0.7rem 0;
+        li.support {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 0.8rem;
+            color: $secondary-color;
+            margin-right: 1.5rem;
+            i::before {
+                vertical-align: middle;
+                align-items: center;
+                font-size: 1.6rem;
+            }
+        }
+        li {
+            a i::before {
+                @extend %social-icon;
+
+            }
+        }
+    }
+    .site-wrapper {
+        a img {
+            width: 20rem;
+            height: auto;
+        }
+    }
+
+    .top-right {
+        
+        li {
+            .searchbox {
+                display: flex;
+                border-radius: 0.5rem;
+                .searchbox-input {
+                    font-size: 1.4rem;
+                    padding: 0.5rem 1rem;
+    
+                }
+                .searchbox-submit {
+                    display: flex;
+                    align-items: center;
+                    i:before {
+                        padding: 0.5rem;
+                        font-size: 2rem;
+                    }
+                }
+            }
+            a {
+                font-size: 1.6rem;
+                padding-left: 1.5rem;
+            }
+        }
+    }
+
+ 
+}
+
+
+.main-nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $tertiary-color;
+    z-index: 9999;
+    animation: 0.5s ease-in-out;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+   
+    ul {
+        li {
+            a {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+header .header-area.sticky .main-nav ul li.has-child-menu:after {
+    color: $secondary-color;
+}
+
+
+/*======= 17. header-area ========= */
+
+header .header-area {
+    .nav-btn {
+        .block-btn {
+            font-size: 1.8rem;
+            font-weight: 5rem;
+            padding: 1rem 0;
+            background: #83d2e4;
+        }
+    }
+}
+header .header-area .main-nav {
+    width: 100%;
+}
+
+header .header-area .main-nav ul {
+    margin: 0;
+    list-style: none;
+    li.basket {
+        a i::before {
+            font-size: 3rem;
+        }
+    }
+}
+
+header .header-area .main-nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0 1rem;
+}
+
+header .header-area .main-nav ul li:hover>a {
+    color: $primary-color;
+}
+
+header .header-area .main-nav ul li a {
+    @extend %menu-style;
+    
+}
+
+header .header-area .main-nav ul li ul.sub-menu>li {
+    padding: 0;
+    // border-bottom: 1px solid #eee;
+}
+
+header .header-area .main-nav ul li ul.sub-menu {
+    li {
+        a {
+            @extend %menu-style;
+            padding: 1rem 1.5rem;
+            color: $secondary-color;
+        }
+    }
+}
+
+header .header-area .main-nav ul li ul.sub-menu>li a.active {
+    color: $primary-color;
+}
+
+header .header-area .main-nav ul li ul.sub-menu>li a:hover {
+    background: transparent;
+    color: $primary-color;
+    transform: translateX(10px);
+}
+
+header .header-area .main-nav ul li.has-child-menu:after {
+    position: absolute;
+    right: -0.5rem;
+    color: $secondary-color;
+    top: 1rem;
+    font-family: "boxicons";
+    content: "";
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+header .header-area .main-nav ul li:hover.has-child-menu:after {
+    transform: rotate(-180deg);
+    color: $primary-color;
+}
+
+header .header-area .main-nav>ul>li>a.active {
+    color: $primary-color;
+}
+
+/*===== 18. Nav Menu CSS =====*/
+
+.main-nav ul li .sub-menu {
+    position: absolute;
+    left: 0;
+    top: auto;
+    right: 0;
+    min-width: 200px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #f3f2f7;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+    transform: translateY(20px);
+    transition: all 0.3s;
+    border-top: 3px solid $primary-color;
+}
+
+.main-nav ul li .sub-menu li .sub-menu {
+    right: -200px;
+    left: inherit;
+    top: 0;
+}
+
+.main-nav ul li .sub-menu>li {
+    display: block;
+    position: relative;
+}
+
+.main-nav ul>li a:hover {
+    background: transparent;
+    color: $primary-color;
+}
+
+.main-nav .fl {
+    width: 30px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+}
+
+.main-nav .fl:before {
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.main-nav>ul>li+li>.sub-menu {
+    left: 15px;
+}
+
+.main-nav>ul>li:hover>.sub-menu,
+.main-nav ul li .sub-menu li:hover>.sub-menu,
+.main-nav ul li .sub-menu li .sub-menu li:hover>.sub-menu {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+/*--- Navbar area end ---*/
+
+/*--- 19. slider area ---*/
+.slider-area {
+    background: transparent;
+    .carousel {
+        .carousel-indicators {
+            bottom: -3rem;
+            .indicator-btn {
+                width: 30px;
+                height: 0.5rem;
+                margin-right: 10px;
+                margin-left: 10px;
+                background: $desc-color;
+                border-radius: 0.3rem;
+            }
+        }
+        .carousel-indicators .active {
+            background: #fec01f;
+        }
+        .slide-btn {
+            background: transparent;
+            span {
+                width: 3rem;
+                height: 3rem;
+                i:before {
+                    font-size: 2rem;
+                    color: $tertiary-color;
+                    background: transparent;
+                    padding: 1rem;
+                    border-radius: 5rem;
+                    border: 0.5rem solid;
+                    border-color: $tertiary-color;
+
+                }
+            }
+        }
+        .carousel-control-prev {
+            left: -7rem;
+        }
+        .carousel-control-next {
+            right: -5rem;
+        }
+    }
+}
+/*--- slider area End---*/
+
+/*--- Service area ---*/
+.product-area {
+    .section-heading {
+        h2{
+            @extend %section-title;
+        }
+        margin-bottom: 7rem;
+    }
+    .cup-box {
+        // border: 1px solid;
+        border-radius: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 3rem;
+        &:hover {
+            
+            .img-box {
+                &::before {
+                    width: 100%;
+                    height: 100%;
+                }
+                .order-btn {
+                    .btn-order {
+                        opacity: 1;
+                    }
+                }
+            }
+            .btn-category {
+                color: #83d2e4;
+            }
+        }
+        .img-box {
+            position: relative;
+            &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                background: rgba(0, 0, 0, 0.3);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 0.3s ease-in-out;
+            }
+            .order-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                .btn-order {
+                    font-size: 1.6rem;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    background: #fec01f;
+                    padding: 0.5rem 2rem;
+                    color: #fff;
+                    transition: all 0.3s ease-in-out;
+                    opacity: 0;
+                    &:hover {
+                        background: #83d2e4;
+                    }
+                }
+            }
+        }
+        .btn-category {
+            width: 100%;
+            border-top: 1px solid #d6d6d6;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-weight: 500;
+            color: $secondary-color;
+            background: transparent;
+            transition: all 0.3s ease-in-out;
+        }
+        
+    }
+}
+/*--- Service area End ---*/
+
+/*--- 21. About Us area ---*/ 
+.menu-nav-area {
+    background: #eebf3f;
+    padding: 1rem 0;
+    .nav__menus {
+        ul {
+            li {
+                &:hover {
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+                
+                a {
+                    font-size: 1.6rem;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+.rs  {
+    padding-top: 8.5rem;
+}
+/*--- About Us area End ---*/
+
+/*--- 22. Counter Area ---*/
+.counter-area {
+    background: $bg-color;
+    margin: 6rem 0;
+    padding: 7rem 0;
+    position: relative;
+    &::before {
+        background-image: url(../images/counter-top-shape.png);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        width: 13.5rem;
+        height: 23.5rem;
+        background-repeat: no-repeat;
+    }
+    &::after {
+        background-image: url(../images/counter-right-bottom-shape.png);
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 13.5rem;
+        height: 23.5rem;
+        background-repeat: no-repeat;
+    }
+    .counter-container {
+        .widget-icon {
+            margin-bottom: 3.5rem;
+            margin-top: 2rem;
+            i::before {
+                @extend %icon-style;
+                background: rgba(255, 193, 32, 0.15);
+                color: $primary-color;
+                margin: 0;
+            }
+        }
+        .counter-info {
+            .inner-count {
+                padding: 1.5rem 0;
+                h2 {
+                    @extend %section-title;
+                    font-family: $secondary-font;
+                    font-size: 4.7rem;
+                    margin: 0;
+                }
+           
+                i {
+                    vertical-align: middle;
+                    display: flex;
+                    align-items: center;
+                    &::before {
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+            h4 {
+                @extend %section-inner-title;
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+/*--- Counter Area End ---*/
+
+/*--- 23. Project Area Start ---*/
+.project-area {
+    .project-title {
+        h4 {
+            @extend %section-top-title;
+            // margin-bottom: 0;
+        }
+        h2 {
+            @extend %section-title;
+        }
+    }
+    .filters-button-group {
+        text-align: right;
+        margin-top: 7rem;
+        .is-checked {
+            color: $primary-color !important;
+        }
+        .button {
+            @extend %section-menu;
+            &:hover {
+                color: $primary-color;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    }
+    .section-top {
+        align-items: center;
+    }
+    .portfolio_wrapper {
+        position: relative;
+        .portfolio-item-box {
+            margin-top: 8rem;
+        }
+    }
+}
+
+.project-area .portfolio_wrapper .portfolio-item-box .element-item:hover .caption {
+    height: 50%;
+    padding: 15px;
+}
+/*--- Project Area End ---*/
+
+/*---- 24. Start working area Css ---*/
+.working-area {
+    .working-left-content {
+        max-width: 57rem;
+        h4 {
+            @extend %section-top-title;
+        }
+        h2 {
+            @extend %section-title;
+        }
+        p {
+            @extend %inner-desc;
+        }
+        .working-acordion-area {
+            margin-top: 3rem;
+            .accordion-item {
+                border: none;
+                margin-bottom: 1rem;
+                h4.accordion-header {
+                    margin: 0;
+                    a {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        letter-spacing: normal;
+                        font-family: $primary-font;
+                        color: $secondary-color;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        line-height: 2.2rem;
+                        cursor: pointer;
+                    }
+                }
+                .ac-body {
+                    font-size: 1rem;
+                    font-family: $secondary-font;
+                    color: $desc-color;
+                    font-weight: normal;
+                    line-height: 1.8rem;
+                    padding-left: 3rem;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .working-right-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 5rem;
+        /*=== working area inner icon box CSS ===*/
+        .icon__box {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: #fec01f;
+            margin-bottom: 3rem;
+            border-radius: 90%;
+            min-width: 16rem;
+            min-height: 16rem;
+            position: relative;
+            border: 0.2rem solid $primary-color;
+            z-index: 999;
+            padding: 4rem 0;
+            &:hover {
+                background: $tertiary-color;
+                span {
+                    background: $primary-color;
+                    color: $tertiary-color;
+                }
+                i:before {
+                    color: $primary-color;
+                }
+                p {
+                    color: $secondary-color;
+                }
+            }
+            span {
+                color: $secondary-color;
+                background: $tertiary-color;
+                font-family: $primary-font;
+                font-size: 1.6rem;
+                font-weight: 500;
+                width: 4rem;
+                height: 4rem;
+                padding: 0.3rem;
+                border-radius: 5rem;
+                border: 0.1rem solid $primary-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: 0;
+                top: 0.5rem;
+                transition: all 0.3s ease-in-out;
+            }
+            i {
+                &:before {
+                    @extend %icon-style;
+                    background: transparent;
+                    font-size: 5rem;
+                    margin: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            p {
+                @extend %section-menu;
+                padding: 0;
+                color: $tertiary-color;
+                transition: all 0.3s ease-in-out;
+                margin-top: 1.5rem;
+                margin-bottom: 0;
+            }
+        }
+        /*=== working area inner icon box CSS END ===*/
+    }
+}
+/*--- Working Area End ---*/
+
+/*---- 25. Start Skill area Css ---*/
+.skill-area {
+    .skill-area-inner-content {
+        h4 {
+            @extend %section-top-title;
+        }
+        h2 {
+            @extend %section-title;
+        }
+        p {
+            @extend %inner-desc;
+        }
+        .barWrapper {
+            .progressText {
+                .progress {
+                    .progress-bar {
+                        .tooltip.top {
+                            padding: 5px 0;
+                            margin-top: -3px;
+                            .tooltip-arrow {
+                                border-left: 5px solid transparent;
+                                border-right: 5px solid transparent;
+                                border-top: 5px solid #eebf3f;
+                            }
+                            .tooltip-inner {
+                                background-color: #eebf3f;
+                                padding: 5px 15px;
+                                color: rgb(23, 44, 66);
+                                font-weight: bold;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.progress-wrap {
+    margin-top: 3.5rem;
+    position: relative;
+    .progress-title {
+        font-family: $secondary-font;
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 10px;
+        color: $secondary-color;
+    }
+    .progress {
+        height: 12px;
+        width: 100%;
+        background: rgba(254, 191, 31, 0.2);
+        // opacity: 0.2;
+        border-radius: 0;
+        box-shadow: none;
+        margin-bottom: 3rem;
+        overflow: visible;
+        border-radius: 40px;
+        top: -38px;
+        left: 28.0312px;
+        display: block;
+    }
+    .progress .progress-bar {
+        overflow: visible;
+        box-shadow: none;
+        position: relative;
+        border-radius: 40px;
+        background: $primary-color;
+        animation: animate-positive 2s;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 12px solid #eebf3f;
+    }
+    .progress .progress-bar .progress-value {
+        position: absolute;
+        right: 0;
+        top: -45px;
+        font-family: $secondary-font;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 9px;
+        color: $primary-color;
+        background: transparent;
+        border: 0.1rem solid $primary-color;
+        border-radius: 0.2rem;
+        padding: 0.6rem 0.4rem;
+        color: $secondary-color;
+        &:after {
+            border: solid;
+            border-color: rgba(254, 191, 31, 0.8) transparent;
+            border-width: 6px 6px 0 6px;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 1.2rem;
+            top: 100%;
+            z-index: 9;
+        }
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+/*---- Start Skill area Css ---*/
+
+/*---- 26. Start Testimonial area ---*/
+.testimonial-area {
+    background: rgba(254, 191, 31, 0.3);
+    margin: 6rem 0;
+    position: relative;
+    /* Background shape */
+    &::before {
+        background-image: url(../images/client-area-shape1.png);
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 13.5rem;
+        height: 37.9rem;
+        background-repeat: no-repeat;
+    }
+    /* Background shape */
+    &::after {
+        background-image: url(../images/client-area-shape2.png);
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        width: 13.5rem;
+        height: 37.9rem;
+        background-repeat: no-repeat;
+    }
+    .testimonial-top-content {
+        margin-bottom: 5rem;
+        text-align: center;
+        h4 {
+            @extend %section-top-title;
+        }
+        h2 {
+            @extend %section-title;
+        }
+        p {
+            @extend %section-top-inner-desc;
+        }
+    }
+    .owl-carousel .owl-item img {
+        display: block;
+        width: fit-content;
+    }
+    .client-testimonial {
+        .caption_info {
+            background: $tertiary-color;
+            padding: 3.5rem 2rem;
+            .customer_info {
+                position: relative;
+                .profile {
+                    img {
+                        border-radius: 5rem;
+                        padding: 1rem;
+                    }
+                    .profile_info {
+                        h3 {
+                            @extend %profile-title1;
+                        }
+                    }
+                    .designation {
+                        font-family: $secondary-font;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 3rem;
+                    }
+                }
+                .review-icon {
+                    margin-top: 1.8rem;
+                    i:before {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        .customer-text {
+            align-items: center;
+            i:before {
+                background: transparent;
+                color: $primary-color;
+                font-size: 4rem;
+                padding: 0;
+                margin-right: 1rem;
+            }
+            p {
+                @extend %inner-desc;
+                max-width: 274px;
+            }
+        }
+    }
+}
+/*---- Testimonial area End ---*/
+
+/*---- 27. Start Team area ---*/
+.team-area {
+    .team-top-content {
+        text-align: center;
+        margin-bottom: 7rem;
+        h4 {
+            @extend %section-top-title;
+        }
+        h2 {
+            @extend %section-title;
+        }
+        p {
+            @extend %section-top-inner-desc;
+        }
+    }
+    /*--- team slider css ---*/
+    .team-slider-area {
+        .caption-info {
+            .col-team {
+                display: flex;
+                flex-direction: column;
+                .profile {
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    .caption {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $primary-color;
+                        width: 100%;
+                        color: $secondary-color;
+                        height: 27%;
+                        overflow: hidden;
+                        border-radius: 50% 50% 0% 0%/100% 100% 0% 0%;
+                        justify-content: center;
+                        transition: all 0.3s ease-out;
+                        text-align: center;
+                        .profile-content {
+                            padding: 3rem 0;
+                            h4 {
+                                @extend %profile-title2;
+                            }
+                            .designation {
+                                font-family: $secondary-font;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 1.4rem;
+                                line-height: 3rem;
+                            }
+                        }
+                        .social-menu {
+                            ul li {
+                                display: inline-block;
+                                a {
+                                    i {
+                                        &:hover::before {
+                                            border: 0.2rem solid $tertiary-color;
+                                            background: transparent;
+                                            color: $secondary-color;
+                                        }
+                                        &:before {
+                                            @extend %team-social-icon;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team-area .team-slider-area .caption-info .profile:hover .caption {
+    height: 45%;
+    border-radius: 50% 50% 0% 0%/75% 75% 0% 0%;
+}
+/*---- Team area End ---*/
+
+/*---- 28. Start Client slider area ---*/
+.client-area {
+    background: #e5e5e5;
+    margin: 6rem 0;
+    padding-bottom: 4rem;
+    .client-area-top-content {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        h4 {
+            @extend %section-top-title;
+        }
+        h2 {
+            @extend %section-title;
+        }
+    }
+    .marquee-inner-content {
+        height: 15rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        box-sizing: border-box;
+        position: relative;
+        .marquee-item {
+            display: inline-block;
+            transition: all 0.2s ease-out;
+            padding: 2rem 0;
+            &:hover {
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+        }
+    }
+    @keyframes marquee {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: -100%;
+        }
+    }
+}
+/*---- End Client slider area ---*/
+
+/*---- 29. Start Blog area ---*/
+.blog-area {
+    .blog-top-content {
+        margin-bottom: 7rem;
+        h4 {
+            @extend %section-top-title;
+        }
+        h2 {
+            @extend %section-title;
+        }
+        p {
+            @extend %section-top-inner-desc;
+        }
+    }
+}
+/*---- End Blog area ---*/
+
+/*---- 30. Start Newsletter area ---*/
+.newsletter-area {
+    background: linear-gradient(rgba(38, 35, 57, 0.9), rgba(38, 35, 57, 0.9)), 
+    url(../images/newsletter-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0;
+    margin-top: 3rem;
+    .newsletter-content {
+        margin-bottom: 5.5rem;
+        h2 {
+            @extend %section-title;
+            color: $tertiary-color;
+            font-size: 4.2rem;
+            line-height: 5.4rem;
+        }
+    }
+    .input-group {
+        max-width: 67rem;
+        margin: 0 auto;
+        border: 0.2rem solid $primary-color;
+        border-radius: 5rem;
+        background: $secondary-color;
+        .form-control {
+            height: 5rem;
+            background: $secondary-color;
+            box-shadow: none;
+            border-radius: 5rem;
+            padding: 0.5rem 3rem;
+            border: none;
+            font-size: 1.8rem;
+            color: $tertiary-color;
+            line-height: 2.2rem;
+            letter-spacing: 0.05rem;
+            text-transform: capitalize;
+            font-weight: normal;
+            &:focus {
+                outline: none !important;
+                border: none !important;
+            }
+        }
+        .btn-subscribe {
+            background: $primary-color;
+            color: $tertiary-color;
+            padding: 0 5rem;
+            border-radius: 5rem 5rem 5rem 5rem !important;
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 3.7rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            &:focus {
+                outline: none !important;
+                border: none !important;
+            }
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+.nltr-2 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+/*---- End Newsletter area ---*/
+
+/*======== 31. FOOTER AREA =======*/
+.footer-area {
+    position: relative;
+    background: $secondary-color;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    .footer-wrapper {
+        padding-bottom: 5.5rem;
+        .widget-area {
+            margin: 0;
+            p {
+                @extend %footer-desc;
+                max-width: 37rem;
+            }
+            ul {
+                li {
+                    a i::before {
+                        @extend %footer-social-icon;
+                    }
+                }
+            }
+        }
+        .widget-area {
+            position: relative;
+            margin-top: 0.5rem;
+            h3 {
+                color: $tertiary-color;
+                font-weight: 700;
+                font-size: 2.2rem;
+                text-transform: capitalize;
+                position: relative;
+                margin-bottom: 2rem;
+            }
+            ul {
+                padding: 0;
+                li {
+                    list-style: none;
+                    transition: all 0.3s ease-in-out;
+                    margin-bottom: 1.5rem;
+                    &:hover {
+                        transform: translateX(0.5rem);
+                    }
+                    &:hover a {
+                        color: $primary-color;
+                    }
+                    a {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        line-height: 2.1rem;
+                        align-items: center;
+                        transition: all 0.3s ease-in-out;
+                        text-transform: capitalize;
+                        line-height: 2.1rem;
+                        color: $tertiary-color;
+                        font-family: $secondary-font;
+                    }
+                }
+            }
+            .single_info {
+                margin-top: 1rem;
+                color: $tertiary-color;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                span i {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: $primary-color;
+                    margin-right: 1rem;
+                    &::before {
+                        vertical-align: middle;
+                    }
+                }
+                p {
+                    margin: 0;
+                }
+                a {
+                    font-weight: 500;
+                    line-height: 2.8rem;
+                    color: $tertiary-color;
+                    &:hover {
+                        color: $primary-color;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+            .subscribe_form {
+                width: 100%;
+                margin: 0 auto;
+                box-shadow: 0rem 0.2rem 0.5rem 0rem rgba(10, 6, 20, 0.24);
+                .input-group {
+                    padding-top: 2rem;
+                    padding-bottom: 4.5rem;
+                }
+                input {
+                    height: 4.4rem;
+                    font-size: 1.6rem;
+                    padding: 0 1rem;
+                }
+                button {
+                    border-radius: 0 0.25rem 0.25rem 0;
+                    width: 10rem;
+                    padding: 1rem 0.5rem;
+                    text-transform: uppercase;
+                    transition: all ease 0.3s;
+                }
+                .input-group-btn:last-child>.btn,
+                .input-group-btn:last-child>.btn-group {
+                    z-index: 2;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    .other-page-footer {
+        padding-top: 0 !important;
+    }
+}
+
+/*==== 32. Copy Right =====*/
+.copy-right {
+    padding-bottom: 0.5rem;
+    p {
+        font-size: 1.4rem;
+        color: $tertiary-color;
+        font-weight: 500;
+        line-height: 2.1rem;
+        margin: 0;
+        font-family: $secondary-font;
+        text-transform: capitalize;
+        a {
+            color: $tertiary-color;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+/*=== End FOOTER AREA ===*/
+
+/*=== END HOME PAGE ONE AREA ===*/
+/*
+=======================================
+======= 33. START HOME PAGE TWO AREA ======
+=======================================
+*/
+/*======= 34. Home2 header-area ========= */
+
+header .home2-header .nav-bar .main-nav {
+    float: right;
+}
+
+header .home2-header .nav-bar .main-nav ul {
+    margin: 0;
+    list-style: none;
+}
+
+header .home2-header .nav-bar .main-nav ul li:last-child {
+    margin-right: 3rem;
+}
+
+header .home2-header .nav-bar .main-nav ul li:hover>a {
+    color: $primary-color;
+}
+
+header .home2-header .nav-bar .main-nav ul li a {
+    @extend %menu-style;
+    color: $tertiary-color;
+}
+
+header .home2-header .nav-bar .main-nav ul li ul.sub-menu>li {
+    padding: 0;
+}
+
+header .home2-header .nav-bar .main-nav ul li ul.sub-menu {
+    li {
+        a {
+            @extend %menu-style;
+            padding: 1rem 1.5rem;
+            color: $secondary-color;
+        }
+    }
+}
+
+header .home2-header .nav-bar .main-nav ul li ul.sub-menu>li a.active {
+    color: $primary-color;
+}
+
+header .home2-header .nav-bar .main-nav ul li ul.sub-menu>li a:hover {
+    background: transparent;
+    color: $primary-color;
+    transform: translateX(10px);
+}
+
+header .home2-header .nav-bar .main-nav ul li.has-child-menu:after {
+    color: $tertiary-color;
+}
+
+header .home2-header .nav-bar .main-nav ul li:hover.has-child-menu:after {
+    color: $primary-color;
+}
+
+header>.home2-header .nav-bar .nav-right {
+    padding: 1.2rem 0;
+    .top-btn {
+        width: 100%;
+        border: 0.8rem solid rgba(255, 193, 32, 0.3);
+        border-radius: 5rem;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            border: 0.8rem solid rgba(38, 35, 57, 0.3);
+            .quote_btn {
+                background: $secondary-color;
+            }
+        }
+        a.quote_btn {
+            @extend %top-btn;
+        }
+    }
+}
+
+header .home2-header .nav-bar .main-nav>ul>li>a.active {
+    color: $primary-color;
+}
+
+.home2-header-top {
+    background: transparent;
+    position: absolute;
+    top: 0rem;
+    z-index: 99;
+    width: 100%;
+    padding: 1rem 0;
+    ul.topbar-support {
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        li.support {
+            margin-right: 0.5rem;
+            a {
+                color: $tertiary-color;
+                display: inline-flex;
+                i:before {
+                    background: transparent;
+                    color: $tertiary-color;
+                    padding: 0;
+                    vertical-align: middle;
+                    border: none;
+                }
+                span {
+                    padding: 0.4rem 0;
+                }
+            }
+        }
+    }
+    ul {
+        padding: 0.5rem 0;
+        li {
+            margin: 0;
+            padding: 0.5rem;
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 0.8rem;
+            color: $secondary-color;
+            i::before {
+                vertical-align: middle;
+                align-items: center;
+                margin-right: 1rem;
+                font-size: 1.6rem;
+            }
+        }
+        li {
+            a i::before {
+                @extend %home2-social-icon;
+            }
+            a i.flaticon-whatsapp::before {
+                border: none;
+            }
+        }
+    }
+}
+
+header {
+    position: relative;
+    .home2-header {
+        position: absolute;
+        top: 5.5rem;
+        z-index: 999;
+        width: 100%;
+        background: transparent;
+        .nav-bar {
+            background: rgba(255, 255, 255, 0.3);
+            // padding: 0 2rem;
+            border-radius: 1rem;
+            .site-wrapper {
+                a.navbar-brand {
+                    padding: 2rem 0;
+                }
+            }
+        }
+    }
+}
+
+.home2-header.sticky {
+    .nav-bar {
+        .main-nav {
+            ul {
+                li {
+                    a {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+header .home2-header.sticky .nav-bar .main-nav ul li.has-child-menu:after {
+    color: $secondary-color;
+}
+
+.owl-carousel .owl-item img {
+    max-width: 100%;
+}
+/*--- 35. Home2 slider area ---*/
+
+.home2-slider-area {
+    background: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)), url(../images/home2-slider-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // padding-top: 24rem;
+    // padding-bottom: 3rem;
+    position: relative;
+    .banner-slider {
+        .slide-item {
+            padding: 5rem 0;
+            .slide-content {
+                display: flex;
+                align-items: center;
+                .home2-slider-content {
+                    text-align: left;
+                    h1 {
+                        @extend %slider-title;
+                        font-size: 4.8rem;
+                        line-height: 6.5rem;
+                        text-align: left;
+                    }
+                    p {
+                        @extend %slider-desc;
+                        text-align: left;
+                        max-width: 57rem;
+                        margin: 0;
+                    }
+                    .home2-slider-button {
+                        display: flex;
+                        justify-content: start;
+                        margin-top: 4rem;
+                        .btn-left {
+                            margin-right: 5rem;
+                            border: 0.8rem solid rgba(255, 193, 32, 0.3);
+                            border-radius: 5rem;
+                            transition: all 0.3s ease-in-out;
+                            &:hover>.slider-btn1 {
+                                background: $secondary-color;
+                                color: $primary-color;
+                                border: 0.1rem solid $primary-color;
+                            }
+                            .slider-btn1 {
+                                @extend %btn-style-one;
+                            }
+                        }
+                        .btn-right {
+                            border: 0.8rem solid rgba(255, 193, 32, 0.3);
+                            border-radius: 5rem;
+                            transition: all 0.3s ease-in-out;
+                            &:hover>.slider-btn2 {
+                                background: transparent;
+                                color: $tertiary-color;
+                            }
+                            .slider-btn2 {
+                                @extend %btn-style-tw;
+                            }
+                        }
+                    }
+                }
+                .slider-inner-img {
+                    z-index: 999;
+                    position: relative;
+                    text-align: center;
+                    padding: 16rem 2rem 6rem 0;
+                    .slider-play-btn {
+                        z-index: 9999;
+                        position: absolute;
+                        top: 48%;
+                        left: 46%;
+                        a.animated-btn {
+                            width: 7rem;
+                            height: 7rem;
+                            border-radius: 50%;
+                            line-height: 80px;
+                            display: inline-block;
+                            text-align: center;
+                            background: rgba(38, 35, 57, 0.75);
+                            position: relative;
+                            border: none;
+                            i:before {
+                                font-size: 5rem;
+                                display: flex;
+                                align-items: center;
+                                padding: 0.7rem;
+                            }
+                        }
+                        .animated-btn::before,
+                        .animated-btn::after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            border-radius: 50%;
+                            background: rgba(38, 35, 57, 0.6);
+                            animation: ripple-1 2s infinite ease-in-out;
+                            z-index: -1;
+                        }
+                        .animated-btn::after {
+                            background: rgba(38, 35, 57, 0.6);
+                            animation: ripple-2 2s infinite ease-in-out;
+                            animation-delay: 0.5s;
+                        }
+                        @keyframes ripple-1 {
+                            0% {
+                                transform: scale(1);
+                                opacity: 1;
+                            }
+                            100% {
+                                transform: scale(1.5);
+                                opacity: 0;
+                            }
+                        }
+                        @keyframes ripple-2 {
+                            0% {
+                                transform: scale(1);
+                                opacity: 1;
+                            }
+                            100% {
+                                transform: scale(1.7);
+                                opacity: 0;
+                            }
+                        }
+                    }
+
+                    .jquery-modal {
+                        .modal {
+                            top: 13rem;
+                        }
+                        /* Modal Body */
+                        .modal-overlay {
+                            @extend %modal-overlay;
+                            .modal-container {
+                                @extend %modal-container;
+                                img {
+                                    max-width: 80rem;
+                                    max-height: 40rem;
+                                    border-radius: 1rem;
+                                }
+                                .close-btn {
+                                    @extend %close-btn-style;
+                                    i:before {
+                                        @extend %close-btn-inner-style;
+                                    }
+                                }
+                            }
+                        }
+                        /* Open/Close Modal */
+               
+                        // .modal-open {
+                        //     visibility: visible;
+                        //     z-index: 99999;
+                        // }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+header .responsive-area {
+    padding-left: 2.2rem;
+    .topbar-support {
+        margin-bottom: 2rem;
+        li.support {
+            margin-bottom: 1rem;
+            a {
+                display: flex;
+                color: $tertiary-color;
+                i:before {
+                    background: transparent;
+                    color: $tertiary-color;
+                    padding: 0.5rem;
+                    vertical-align: middle;
+                    margin-right: 0.5rem;
+                }
+                span {
+                    padding: 0.4rem 0;
+                }
+            }
+        }
+    }
+    ul.responsive-icon { 
+        li {
+            padding-left: 0.5rem !important;
+            a {
+                i:before {
+                    padding: 0;
+                }
+            }
+        }
+        
+    }
+}
+/*--- Home2 slider area End---*/
+
+/*=== About Us aria Css ===*/
+
+.about-us-area {
+    // margin-top: 4rem;
+    .about-inner-box {
+        position: relative;
+        text-align: left;
+        max-width: 48rem;
+        margin: 0 auto;
+        &:before {
+            content: "";
+            position: absolute;
+            left: -2.5rem;
+            top: -0.5rem;
+            z-index: -1;
+            height: 0.1rem;
+            width: 35%;
+            border-top: 20rem solid #fec01f;
+            border-radius: 0.3rem;
+            margin-top: -2rem;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: -2.5rem;
+            bottom: -2.5rem;
+            z-index: -1;
+            height: 0.1rem;
+            border-radius: 0.3rem;
+            width: 35%;
+            border-bottom: 20rem solid $primary-color;
+            margin-top: -2rem;
+        }
+        img {
+            height: 100%;
+        }
+    }
+    .about-inner-content {
+        .last-content {
+            position: relative;
+            p {
+                @extend %inner-desc;
+                max-width: 40rem;
+            }
+            .duration-about {
+                @extend %about-duration;
+                padding: 3.5rem 0;
+                span {
+                    @extend %duration-span;
+                }
+                p {
+                    @extend %duration-text;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .about-area-btn {
+            margin-top: 5rem;
+        }
+    }
+}
+/*=== About Us aria End ===*/
+
+/*=== Service aria Css ===*/
+.service-area {
+    .service-top-content {
+        margin-bottom: 7rem;
+        ;
+        text-align: center;
+        h4 {
+            @extend %section-top-title;
+        }
+        h2 {
+            @extend %section-title;
+        }
+        p {
+            @extend %section-top-inner-desc;
+        }
+    }
+}
+/*=== Service aria Css End ===*/
+
+/*--- Counter Area ---*/
+.counter-area__2 {
+    background-image: url(../images/home2-counter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 5.5rem;
+
+    &::before {
+        opacity: 0;
+    }
+    &::after {
+        opacity: 0;
+    }
+    .counter-container {
+        padding: 5rem 0;
+        background: rgba(248, 229, 181, 0.8);
+        border-radius: 2rem 0 2rem 0;
+        margin-bottom: 1.5rem;
+    }
+}
+/*--- Counter Area End ---*/
+
+/*=== Project aria Css ===*/
+.project-area {
+    padding-bottom: 4.5rem;
+    .project-top-content {
+        text-align: center;
+        h4 {
+            @extend %section-top-title;
+        }
+        h2 {
+            @extend %section-title;
+        }
+        p {
+            @extend %section-top-inner-desc;
+        }
+    }
+    .filters-button-group {
+        text-align: center;
+        button {
+            margin-bottom: 1rem;
+        }
+    }
+    .portfolio_wrapper {
+        .project-inner-items {
+            margin-top: 6rem;
+            .element-item {
+                position: relative;
+                margin-bottom: 1.5rem;
+                img {
+                    width: 100%;
+                }
+                .caption {
+                    left: 10%;
+                    width: 80%;
+                    border-radius: 1rem 1rem 0 0;
+                    h4 {
+                        @extend %card-title;
+                        margin-top: 1rem;
+                    }
+                    p {
+                        @extend %inner-desc;
+                        color: $secondary-color;
+                        margin: 0 auto;
+                        max-width: 19.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.project-area .portfolio_wrapper .project-inner-items .element-item:hover .caption {
+    height: 25%;
+    padding: 1.5rem;
+}
+
+.project-area .portfolio_wrapper .project-inner-items .element-item:hover .design-caption {
+    height: 38%;
+    padding: 1.5rem;
+}
+
+.project-area .portfolio_wrapper .project-inner-items .element-item:hover .caption-item2 {
+    height: 32%;
+    padding: 1.5rem;
+}
+/*=== Project aria Css END ===*/
+
+/*=== Home2 working aria Css ===*/
+.working-area.wrk-2{
+    // padding-bottom: 3rem;
+    padding-top: 7.5rem;
+    .working-top-content {
+        text-align: center;
+        margin-bottom: 22.5rem;
+        h4 {
+            @extend %section-top-title;
+        }
+        h2 {
+            @extend %section-title;
+        }
+        p {
+            @extend %section-top-inner-desc;
+        }
+    }
+    /* working inner content */
+    .working-inner-content {
+        // position: relative;
+        .col {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .inner-boxs {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            margin: 0 auto;
+            .middle-box {
+                margin-top: -15rem;
+            }
+            .middle-bottom-box {
+                margin-top: 35rem;
+            }
+            /*=== working area inner icon box CSS ===*/
+
+            /*=== working area inner icon box CSS END ===*/
+            .box-three::before {
+                background-image: url(../images/working-box-shape1.png);
+                content: "";
+                position: absolute;
+                right: -100%;
+                top: 70%;
+                z-index: 0;
+                width: 19.5rem;
+                height: 9.1rem;
+                background-repeat: no-repeat;
+            }
+            .box-five::before {
+                background-image: url(../images/working-box-shape2.png);
+                content: "";
+                position: absolute;
+                right: -60%;
+                bottom: -10rem;
+                z-index: 0;
+                width: 19.5rem;
+                height: 9.1rem;
+                background-repeat: no-repeat;
+            }
+            .box-six::before {
+                background-image: url(../images/working-box-shape3.png);
+                content: "";
+                position: absolute;
+                right: 81%;
+                bottom: -10rem;
+                z-index: 0;
+                width: 23rem;
+                height: 12rem;
+                background-repeat: no-repeat;
+            }
+            .box-four {
+                margin-bottom: 0;
+                &::before {
+                    background-image: url(../images/working-box-shape4.png);
+                    content: "";
+                    position: absolute;
+                    right: 105%;
+                    top: 2rem;
+                    z-index: 0;
+                    width: 18.5rem;
+                    height: 11.1rem;
+                    background-repeat: no-repeat;
+                }
+            }
+            .box-two::before {
+                background-image: url(../images/working-box-shape5.png);
+                content: "";
+                position: absolute;
+                left: 35%;
+                bottom: 20rem;
+                z-index: 0;
+                width: 1.8rem;
+                height: 9.5rem;
+                transform: rotate(-6deg);
+                background-repeat: no-repeat;
+            }
+            .box-one::before {
+                background-image: url(../images/working-box-shape1.png);
+                content: "";
+                position: absolute;
+                right: -30%;
+                bottom: -10rem;
+                z-index: 0;
+                width: 19.3rem;
+                height: 9.2rem;
+                background-repeat: no-repeat;
+            }
+        }
+        .progress-inner {
+            margin-top: -50rem;
+            .progress-wrap {
+                .progress-title {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+/*=== Home2 working aria Css END ===*/
+
+/*=== Home2 Testimonial aria Css ===*/
+.home2-testimonial {
+    background: url(../images/home2-client-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d8d8d8;
+    margin-top: 6rem;
+    &::before {
+        opacity: 0;
+    }
+    &::after {
+        opacity: 0;
+    }
+    .home2-client-testimonial {
+        position: relative;
+        .caption_info {
+            background: $tertiary-color;
+            // padding: 3.5rem 2rem;
+            border-radius: 0 0 2rem 0;
+            .customer_info {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .profile_info {
+                    h3 {
+                        @extend %profile-title1;
+                    }
+                    .designation {
+                        font-family: $secondary-font;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 3rem;
+                    }
+                }
+                i:before {
+                    background: transparent;
+                    color: $primary-color;
+                    font-size: 4rem;
+                    padding: 0.7rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .customer-text {
+            align-items: center;
+            text-align: center;
+            padding-bottom: 2rem;
+            p {
+                @extend %inner-desc;
+                padding: 1rem 1.5rem;
+            }
+        }
+        .owl-nav {
+            position: absolute;
+            right: -12rem;
+            top: 20%;
+            backface-visibility: hidden;
+            justify-content: flex-end;
+            display: flex;
+            margin-right: 2rem;
+            // overflow-x: hidden;
+        }
+    }
+}
+/*=== End Testimonial aria Css ===*/
+
+.home2-client-area {
+    margin: 0;
+}
+/*=== END HOME PAGE TWO AREA ===*
+
+/*=== 36. BREADCRUMBS AREA ===*/
+.section-breadCrumbs {
+    background: linear-gradient(rgba(38, 35, 57, 0.7), rgba(38, 35, 57, 0.7)), url(../images/breadcumps-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    position: relative;
+    .breadCrumbs-content {
+        padding-top: 13.5rem;
+        padding-bottom: 12.5rem;
+        .page-name {
+            h2 {
+                @extend %section-title;
+                font-size: 5rem;
+                font-weight: 500;
+                color: $primary-color;
+            }
+        }
+        .breadcrumbs-link {
+            ul {
+                padding: 0.5rem 0;
+                margin: 0 !important;
+                li {
+                    a {
+                        color: $tertiary-color;
+                        font-size: 1.5rem;
+                        font-weight: normal;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                    i:before {
+                        font-size: 0.8rem;
+                        color: $tertiary-color;
+                        font-weight: 400;
+                        margin: 0;
+                        padding: 0 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=== BREADCRUMBS AREA END ===*/
+/*
+===========================================
+======== 37. START SERVICES PAGE AREA =========
+===========================================
+*/
+.service-details-area {
+    .service-inner-img {
+        img {
+            width: 100%;
+            min-height: 470px;
+        }
+    }
+    .service-right-content {
+        padding: 2rem 3rem;
+        background: $bg-color;
+        border: 0.1rem solid #EEEEEE;
+        border-radius: 0.5rem;
+        h3 {
+            @extend %section-inner-title;
+            margin-bottom: 4rem;
+            margin-top: 1.5rem;
+        }
+        .accordion {
+            .accordion-item {
+                margin-bottom: 2rem;
+                h4.accordion-header {
+                    margin: 0;
+                    button.accordion-button {
+                        font-family: $primary-font;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 2.8rem;
+                        color: $secondary-color;
+                        &:focus {
+                            outline: none;
+                            border: none;
+                            box-shadow: none;
+                        }
+                        span {
+                            margin-left: auto;
+                            i:before {
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                        &::after {
+                            display: none;
+                        }
+                    }
+                    .accordion-button:not(.collapsed) span i::before {
+                        transition: all 0.3s ease-in-out;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+    }
+    .service-content {
+        padding-top: 6rem;
+        h2 {
+            @extend %section-title;
+            margin: 0;
+        }
+        p {
+            @extend %inner-desc;
+            padding: 1rem 0;
+            line-height: 2.8rem;
+        }
+    }
+    .inner-text {
+        h3 {
+            @extend %section-inner-title;
+            font-size: 3rem;
+            line-height: 130.6%;
+        }
+        p {
+            @extend %inner-desc;
+            padding: 1rem 0;
+            line-height: 2.8rem;
+        }
+    }
+    .service-inner-text {
+        h3 {
+            @extend %section-inner-title;
+            font-size: 3rem;
+            line-height: 130.6%;
+        }
+        p {
+            @extend %inner-desc;
+            padding: 1rem 0;
+            line-height: 2.8rem;
+        }
+    }
+}
+/*
+===========================================
+========== 38. START ERROR PAGE AREA ==========
+===========================================
+*/
+.error-area {
+    .section-inner {
+        img {
+            max-width: 70%;
+        }
+        .inner-footer {
+            margin-top: 9rem;
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 5rem;
+                line-height: 8.5rem;
+                letter-spacing: 0.01rem;
+                text-transform: uppercase;
+                span {
+                    font-size: 8rem;
+                    color: $primary-color;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .btn-error {
+            margin-top: 5.5rem;
+            button {
+                font-family: $primary-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding: 1.4rem 5rem;
+                border-radius: 5rem;
+                margin-bottom: 3rem;
+            }
+            .btn-home {
+                background: $secondary-color;
+                margin-right: 2.5rem;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: $primary-color;
+                    color: $secondary-color;
+                }
+            }
+            .btn-contact {
+                background: $primary-color;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: $secondary-color;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+/*
+===========================================
+========== 39. START TEAM PAGE AREA =======
+===========================================
+*/
+.team-profile {
+    border-radius: 1rem;
+    background: $bg-color;
+    margin-bottom: 3rem;
+    .profile-caption {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background-color: #bbb;
+        text-align: center;
+        border-radius: 1rem 1rem 0 0;
+        margin: 0;
+        &:hover {
+            .overlay {
+                transform: translateY(5rem);
+                opacity: 1;
+                ul {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+        }
+        img {
+            width: 100%;
+        }
+        .overlay {
+            width: 100%;
+            height: 20%;
+            position: absolute;
+            left: 0;
+            top: -5rem;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            background-color: $primary-color;
+            color: #fff;
+            transform: translateY(0);
+            transition: transform 0.5s ease-in-out;
+            border-radius: 1rem 1rem 0 0;
+            ul {
+                transform: translateY(0);
+                opacity: 0;
+                transition: transform 0.5s linear, opacity 0.5s linear 0.5s;
+                display: flex;
+                align-items: center;
+                li {
+                    a {
+                        i:before {
+                            @extend %team-social-icon;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .profile-content {
+        text-align: center;
+        padding: 3rem 0;
+        h4 {
+            @extend %profile-title2;
+        }
+        .designation {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 3rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.team-page-area {
+    .team-top-content {
+        margin-bottom: 7rem;
+        h4 {
+            @extend %section-top-title;
+        }
+        h2 {
+            @extend %section-title;
+        }
+        p {
+            @extend %section-top-inner-desc;
+        }
+    }
+}
+/*
+===========================================
+======= 40. START LATEST BLOG PAGE AREA ===
+===========================================
+*/
+// .latest-blog-area {}
+/*
+===========================================
+======= 41. START FAQ PAGE AREA ===========
+===========================================
+*/
+.faq-area {
+    ul.nav__menu {
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        border: none;
+        background: $bg-color;
+        border-radius: 1rem;
+        li.menu__item {
+            button.nav-link {
+                font-family: $primary-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2rem;
+                line-height: 2.4rem;
+                color: #A4A4A4;
+                padding: 1rem 3rem;
+                &:hover {
+                    border: none;
+                    border-color: $tertiary-color;
+                    outline: none;
+                }
+            }
+            button.active {
+                background: $secondary-color;
+                color: $tertiary-color;
+            }
+        }
+        li:first-child button {
+            border-radius: 1rem 0 0 1rem;
+        }
+        li:last-child button {
+            border-radius: 0 1rem 1rem 0;
+        }
+    }
+    .inner__content {
+        .accordion-item {
+            border-radius: 1rem 1rem 0 0;
+            margin-bottom: 3rem;
+            .accordion-header {
+                button.accordion-button {
+                    border-radius: 1rem 1rem 0 0;
+                    padding: 0 0 0 3rem;
+                    background: $tertiary-color;
+                    font-family: $primary-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                    display: flex;
+                    justify-content: space-between;
+                    overflow: hidden;
+                    i {
+                        background: $secondary-color;
+                        &:before {
+                            font-weight: 700;
+                            color: $tertiary-color;
+                            padding: 1.5rem 3rem;
+                        }
+                    }
+                    &::after {
+                        display: none;
+                    }
+                }
+                button.collapsed {
+                    background: $tertiary-color;
+                    color: $secondary-color;
+                }
+                .accordion-button:not(.collapsed) {
+                    background: $secondary-color;
+                    color: $tertiary-color;
+                    i::before {
+                        transition: all 0.3s ease-in-out;
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+===========================================
+==== 42. START BLOG SIDEBAR PAGE AREA =====
+===========================================
+*/
+.blog-sidebar-area {
+    .sidebar-widget-area {
+        background: $bg-color;
+        margin-bottom: 4rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .input-group {
+            .form-control {
+                height: 6rem;
+                font-size: 1.5rem;
+                font-weight: normal;
+                border-radius: 1rem 0 0 1rem;
+                border: 0.1rem solid rgba(38, 35, 57, 0.2);
+                background: $bg-color;
+                color: #AEAEAE;
+                font-family: $primary-font;
+            }
+            button {
+                padding: 0;
+                i:before {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    color: $tertiary-color;
+                    background: $secondary-color;
+                    // vertical-align: middle;
+                    margin: 0;
+                    padding: 2.5rem 2rem;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+        h3 {
+            background: $secondary-color;
+            padding: 1.5rem 3rem;
+            color: $tertiary-color;
+            @extend %profile-title1;
+        }
+        .bs {
+            padding: 3rem;
+            .small-post-item {
+                margin-bottom: 2rem;
+                &:hover {
+                    .thump-box img {
+                        transform: scale(1.05);
+                    }
+                    .sidebar-post-title a h4 {
+                        color: $primary-color;
+                    }
+                }
+                .thump-box {
+                    display: block;
+                    overflow: hidden;
+                    border-radius: 0.5rem;
+                    img {
+                        width: 100%;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                .sidebar-post-title {
+                    a h4 {
+                        @extend %blog-inner-title;
+                        padding: 1rem 0;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    .card-details a {
+                        font-size: 1.2rem;
+                        color: $desc-color;
+                        font-weight: 400;
+                        i:before {
+                            margin-right: 0.5rem;
+                            vertical-align: middle;
+                            // font-size: 1rem;
+                            display: flex;
+                            align-items: center;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+            li {
+                margin-bottom: 3rem;
+                a {
+                    font-size: 1.6rem;
+                    color: $secondary-color;
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+        ul.tag-item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            li {
+                margin-bottom: 1.5rem;
+                margin-right: 1rem;
+                a {
+                    border: 0.1rem solid rgba(38, 35, 57, 0.2);
+                    border-radius: 0.3rem;
+                    padding: 1rem 1.5rem;
+                    color: $secondary-color;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background: $secondary-color;
+                        color: $tertiary-color;
+                    }
+                }
+            }
+        }
+        .sidebar-news-letter {
+            .text {
+                p {
+                    font-size: 1.2rem;
+                    color: $desc-color;
+                }
+            }
+            .form-control {
+                margin: 2rem 0;
+                padding: 1rem;
+                font-weight: normal;
+                font-size: 13px;
+                box-shadow: none;
+                border: none;
+                outline: none;
+            }
+            button {
+                width: 100%;
+                background: $secondary-color;
+                color: $tertiary-color;
+                font-weight: 500;
+                font-size: 1.7rem;
+                border-radius: 5rem;
+                padding: 0.8rem 0;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: $primary-color;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+/*
+===========================================
+======  43. START BLOG STANDARD PAGE AREA =
+===========================================
+*/
+.blog-standard {
+    .blog-card {
+        .blog-img {
+            max-height: 35rem;
+            min-width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            span {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 100%;
+                padding: 1rem 7rem;
+                border-radius: 0 10rem 0 0;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+/*
+===========================================
+===== 44. START BLOG DETAILS PAGE AREA ====
+===========================================
+*/
+.blog-details {
+    .blog-text {
+        margin-bottom: 3rem;
+        h5 {
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 4.5rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            @extend %inner-desc;
+            letter-spacing: 0.75px;
+        }
+    }
+    .blog-card {
+        &:hover {
+            box-shadow: none;
+        }
+        .blog-img {
+            max-height: 35rem;
+            min-width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            span {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 100%;
+                padding: 1rem 7rem;
+                border-radius: 0 10rem 0 0;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .blog-footer {
+            position: relative;
+            background: $tertiary-color;
+            z-index: 0;
+            padding: 0;
+            p {
+                @extend %inner-desc;
+                letter-spacing: 0.75px;
+            }
+            .card-details-title {
+                @extend %section-inner-title;
+                font-size: 2.2rem;
+            }
+ 
+            .quote-text {
+                padding: 2.5rem 2rem;
+                background: $secondary-color;
+                border-radius: 1rem;
+                align-items: center;
+                vertical-align: middle;
+                // min-width: 42rem;
+                margin-left: -15rem;
+                i::before {
+                    color: $primary-color;
+                    font-size: 5rem;
+                    font-weight: 700;
+                    vertical-align: middle;
+                    padding: 0 3rem;
+                    margin-right: 2rem;
+                }
+                P {
+                    color: $tertiary-color;
+                    @extend %inner-desc;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .bd {
+            padding-top: 2.5rem;
+            padding-bottom: 3rem;
+        }
+        p {
+            @extend %inner-desc;
+            letter-spacing: 0.75px;
+            // padding: 3rem 0;
+            margin-top: 2rem;
+        }
+    }
+    .tag {
+        background: $tertiary-color;
+    }
+    .tagcloud-widget {
+        justify-content: space-between;
+        align-items: center;
+        ul.tag {
+            align-items: center;
+            padding: 0;
+            h3.widget-title {
+                background: $tertiary-color;
+                color: $secondary-color;
+                padding: 0;
+                margin-right: 2rem;
+                font-weight: 700;
+                font-size: 2.5rem;
+            }
+            li {
+                margin-bottom: 0;
+            }
+        }
+        ul.social-icon {
+            li {
+                a {
+                    &:hover i::before {
+                        color: $secondary-color;
+                    }
+                    i:before {
+                        margin-right: 1.5rem;
+                        color: $primary-color;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .blog-padding {
+        margin-top: 6rem;
+    }
+    .comment-area {
+        h3 {
+            color: $secondary-color;
+            padding: 0;
+            margin-right: 2rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+            position: relative;
+            &::before {
+                content: '';
+                width: 15.5rem;
+                height: 0.2rem;
+                background: $secondary-color;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        .people-content {
+            margin-bottom: 3rem;
+            .people-image {
+                position: relative;
+                margin-right: 1.5rem;
+                &::before {
+                    content: "";
+                    width: 10.6rem;
+                    height: 7.5rem;
+                    background: #fec01f;
+                    position: absolute;
+                    left: -0.5rem;
+                    bottom: 4rem;
+                    z-index: -1;
+                }
+                img {
+                    min-width: 10.6rem;
+                }
+            }
+            .people-comment {
+                .name_and_btn {
+                    h4 {
+                        @extend %blog-inner-title;
+                        font-size: 2rem;
+                    }
+                    span {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 28px;
+                        text-transform: capitalize;
+                    }
+                    .btn-reply {
+                        font-family: $secondary-font;
+                        color: $primary-color;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 22px;
+                        text-transform: capitalize;
+                    }
+                }
+                p.default-content {
+                    @extend %inner-desc;
+                    font-family: $secondary-font;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .people-content:nth-last-child(2) {
+            margin-left: 2.5rem;
+        }
+    }
+    .input__form {
+        h3 {
+            color: $secondary-color;
+            padding: 0;
+            margin-right: 2rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+            position: relative;
+            &::before {
+                content: '';
+                width: 15.5rem;
+                height: 0.2rem;
+                background: $secondary-color;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        .input_area {
+            input:first-child {
+                margin-right: 1.5rem;
+            }
+            .form-control {
+                height: 4rem;
+                // margin-bottom: 1.5rem;
+                background: $bg-color;
+            }
+        }
+        .form-control {
+            height: 4rem;
+            margin-bottom: 1.5rem;
+            background: $bg-color;
+            font-size: 1.2rem;
+            box-shadow: none;
+            border: none;
+            outline: none;
+            padding: 1.5rem;
+            &:focus {
+                border: 0.1rem solid $secondary-color;
+            }
+        }
+        .text__area {
+            height: auto;
+        }
+        .btn-submit {
+            background: $primary-color;
+            color: $tertiary-color;
+            padding: 1rem 3rem;
+            border-radius: 5rem;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin: 3rem 0;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background: $secondary-color;
+            }
+        }
+    }
+}
+/*
+===========================================
+======= 45. START CONTACT PAGE AREA =======
+===========================================
+*/
+.contact-area {
+    .single-contact-box {
+        background: $bg-color;
+        padding: 2.5rem 1.5rem;
+        border-radius: 1rem;
+        .mete-title {
+            i:before {
+                font-size: 5rem;
+                color: $primary-color;
+            }
+            h3 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 2.8rem;
+                // display: flex;
+                // align-items: center;
+                letter-spacing: 0.75px;
+                text-transform: capitalize;
+                color: #262339;
+                margin: 1.5rem 0;
+            }
+        }
+        .meta-content {
+            p {
+                @extend %inner-desc;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                a {
+                    @extend %inner-desc;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                }
+            }
+        }
+    }
+    .office-lctn {
+        .blog-top-content {
+            margin-bottom: 7rem;
+            h2 {
+                @extend %section-title;
+            }
+        }
+        .lctn-card {
+            // background: $bg-color;
+            // border-radius: 1rem;
+            &:hover {
+                .img__bx {
+                    img {
+                        transform: scale(1.1);
+                        // transform: rotate(5deg);
+                    }
+                }
+            }
+            figure {
+                margin: 0;
+            }
+            .img__bx {
+                display: block;
+                overflow: hidden;
+                border-radius: 2rem 0 0 0;
+            
+                img {
+                    border-radius: 1rem 0 0 0;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            .contact-footer {
+                padding: 2rem 3rem;
+                background: #F5F5F5;
+                border: 1px solid #EEEEEE;
+                box-sizing: border-box;
+                border-radius: 0px 0px 20px 0px;
+                hr {
+                    color: #EEEEEE;
+                }
+                h5.card-title {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 28px;
+                    text-align: center;
+                    letter-spacing: 0.75px;
+                    text-transform: capitalize;
+                    color: $secondary-color;
+                }
+                .card-footer {
+                    align-items: center;
+                    background: transparent;
+                    border: none;
+                    i:before {
+                        font-size: 2rem;
+                        color: $primary-color;
+                        margin-right: 1rem;
+                        display: flex;
+                        align-items: center;
+                    }
+                    span {
+                        font-size: 1rem;
+                        color: $desc-color;
+                    }
+                    p {
+                        font-size: 1.4rem;
+                        color: $secondary-color;
+                        font-weight: 500;
+                        letter-spacing: 0.75px;
+                        margin: 0;
+                        a {
+                            color: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mail-form-area {
+        .input__form {
+            h3 {
+                color: $secondary-color;
+                padding: 0;
+                margin-right: 2rem;
+                font-weight: 700;
+                font-size: 2.5rem;
+                margin-bottom: 4rem;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 15.5rem;
+                    height: 0.2rem;
+                    background: $secondary-color;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+            .input_area {
+                input:first-child {
+                    margin-right: 1.5rem;
+                }
+                .form-control {
+                    height: 4rem;
+                    // margin-bottom: 1.5rem;
+                    background: $bg-color;
+                }
+            }
+            .form-control {
+                height: 4rem;
+                margin-bottom: 1.5rem;
+                background: $bg-color;
+                font-size: 1.2rem;
+                box-shadow: none;
+                border: none;
+                outline: none;
+                padding: 1.5rem;
+                &:focus {
+                    border: 0.1rem solid $secondary-color;
+                }
+            }
+            .text__area {
+                height: auto;
+            }
+            .btn-submit {
+                background: $primary-color;
+                color: $tertiary-color;
+                padding: 1.2rem 1.8rem;
+                border-radius: 5rem;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                margin: 3rem 0;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: $secondary-color;
+                }
+            }
+        }
+    }
+}
+/*
+===========================================
+====== 46. START CASE DETAILS PAGE AREA ===
+===========================================
+*/
+.case-details-area {
+    .case-widget-area {
+        padding: 3rem 4rem;
+        background-color: #F5F5F5;
+        border-radius: 1rem;
+        margin-bottom: 4rem;
+        h3.widget-title {
+            color: $secondary-color;
+            padding: 0;
+            // margin-right: 2rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            &::before {
+                content: '';
+                width: 15.5rem;
+                height: 0.2rem;
+                background: $secondary-color;
+                position: absolute;
+                left: 0;
+                bottom: -0.5rem;
+            }
+        }
+        ul.widget-categorie {
+            hr {
+                color: #DADADA;
+            }
+            li {
+                font-size: 15px;
+                line-height: 32px;
+                span {
+                    @extend %inner-desc;
+                    letter-spacing: 0.75px;
+                }
+            }
+        }
+        ul.btn-download {
+            li {
+                margin-bottom: 2rem;
+                text-align: center;
+                &:hover a {
+                    background: $primary-color;
+                    color: $secondary-color;
+                    font-weight: 600;
+                }
+                a {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 32px;
+                    letter-spacing: 0.75px;
+                    color: #FFFFFF;
+                    background: $secondary-color;
+                    border-radius: 0.5rem;
+                    padding: 1.5rem;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+        .show-case {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+    .blog-card {
+        box-shadow: none;
+        .case-content {
+            p {
+                @extend %inner-desc;
+                letter-spacing: 0.75px;
+                margin-top: 2rem
+            }
+            h5 {
+                @extend %section-inner-title;
+                font-size: 2.2rem;
+                margin-top: 4.5rem;
+            }
+        }
+    }
+}
