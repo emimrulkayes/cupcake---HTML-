@@ -368,7 +368,7 @@ textarea,
     font-family: $secondary-font;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2.4rem;
     color: $desc-color;
     margin: 0;
@@ -1634,7 +1634,7 @@ header .header-area .main-nav>ul>li>a.active {
 }
 /*--- slider area End---*/
 
-/*--- Service area ---*/
+/*--- Product area css start---*/
 .product-area {
     .section-heading {
         h2{
@@ -1686,10 +1686,10 @@ header .header-area .main-nav>ul>li>a.active {
                 .btn-order {
                     font-size: 1.6rem;
                     text-transform: uppercase;
-                    font-weight: 400;
+                    font-weight: 500;
                     background: #fec01f;
                     padding: 0.5rem 2rem;
-                    color: #fff;
+                    color: #4e3c3b;
                     transition: all 0.3s ease-in-out;
                     opacity: 0;
                     &:hover {
@@ -1713,24 +1713,26 @@ header .header-area .main-nav>ul>li>a.active {
         
     }
 }
-/*--- Service area End ---*/
+/*--- Product area css End ---*/
 
-/*--- 21. About Us area ---*/ 
+/*--- Menu area css start---*/ 
 .menu-nav-area {
-    background: #eebf3f;
+    background: #4e3c3b;
     padding: 1rem 0;
+    // margin: 6rem 0;
     .nav__menus {
         ul {
             li {
                 &:hover {
                     a {
                         text-decoration: underline;
+                        color: #83d2e4;
                     }
                 }
                 
                 a {
                     font-size: 1.6rem;
-                    color: $secondary-color;
+                    color: $tertiary-color;
                     font-weight: 500;
                     text-transform: uppercase;
                     text-decoration: none;
@@ -1740,11 +1742,130 @@ header .header-area .main-nav>ul>li>a.active {
         }
     }
 }
+/*--- Menu area css End ---*/
 
-.rs  {
-    padding-top: 8.5rem;
+/*--- Support area css start ---*/
+.support-area {
+    .store-support {
+        .icon__box {
+            margin-bottom: 2rem;
+            
+            i:before {
+                font-size: 6rem;
+                color: #4e3c3b;
+            }
+        }
+    }
+    .store-text {
+        h3 {
+            @extend %section-inner-title;
+            margin-bottom: 1rem;
+        }
+        p {
+            @extend %inner-desc;
+            a {
+                color: #4e3c3b;
+                &:hover {
+                    color: $secondary-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
-/*--- About Us area End ---*/
+/*--- Support area css end ---*/
+
+.newslatter {
+    .section-inner {
+        background: #4e3c3b;
+        border-radius: 1rem;
+        padding: 6rem 0;
+        .newslatter-content {
+            .section-content {
+                margin-bottom: 5rem;
+                text-align: center;
+                h2 {
+                    @extend %section-title;
+                    margin-bottom: 1.5rem;
+                    color: $tertiary-color
+                }
+                p {
+                    @extend %inner-desc;
+                    font-size: 1.6rem;
+                    color: $desc-color;
+                }
+            }
+            .input-group {
+                .form-control {
+                    height: 5rem;
+                    padding: 0.5rem 2rem;
+                    color: #4e3c3b;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+                .subscribe-btn {
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #4e3c3b;
+                    background: #fec01f;
+                    padding: 0 3rem;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+       
+        }
+    }
+ 
+
+}
+
+footer {
+    
+    .footer-content {
+        border-top: 1px solid #AEAEAE;
+        display: flex;
+        justify-content: space-between;
+        line-height: 4rem;
+        padding: 0;
+        .copy-right {
+            font-size: 1.5rem;
+            color: #4e3c3b;
+            font-weight: 400;
+            span {
+                font-weight: 600;
+                color: $secondary-color;
+            }
+        }
+
+        .site-links {
+            ul {
+                display: flex;
+                flex-direction: row;
+                li {
+                    margin-left: 1rem;
+                    a {
+                        color: $secondary-color;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        padding: 0.5rem;
+                        &:hover {
+                            color: #4e3c3b;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 
 /*--- 22. Counter Area ---*/
 .counter-area {

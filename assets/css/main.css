@@ -276,7 +276,7 @@ header > .home2-header .nav-bar .nav-right .top-btn a.quote_btn {
   margin-bottom: 1.5rem;
 }
 
-.product-area .section-heading h2, .counter-area .counter-container .counter-info .inner-count h2, .project-area .project-title h2, .working-area .working-left-content h2, .skill-area .skill-area-inner-content h2, .testimonial-area .testimonial-top-content h2, .team-area .team-top-content h2, .client-area .client-area-top-content h2, .blog-area .blog-top-content h2, .newsletter-area .newsletter-content h2, .service-area .service-top-content h2, .project-area .project-top-content h2, .working-area.wrk-2 .working-top-content h2, .section-breadCrumbs .breadCrumbs-content .page-name h2, .service-details-area .service-content h2, .team-page-area .team-top-content h2, .contact-area .office-lctn .blog-top-content h2 {
+.product-area .section-heading h2, .newslatter .section-inner .newslatter-content .section-content h2, .counter-area .counter-container .counter-info .inner-count h2, .project-area .project-title h2, .working-area .working-left-content h2, .skill-area .skill-area-inner-content h2, .testimonial-area .testimonial-top-content h2, .team-area .team-top-content h2, .client-area .client-area-top-content h2, .blog-area .blog-top-content h2, .newsletter-area .newsletter-content h2, .service-area .service-top-content h2, .project-area .project-top-content h2, .working-area.wrk-2 .working-top-content h2, .section-breadCrumbs .breadCrumbs-content .page-name h2, .service-details-area .service-content h2, .team-page-area .team-top-content h2, .contact-area .office-lctn .blog-top-content h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 3.5rem;
@@ -286,7 +286,7 @@ header > .home2-header .nav-bar .nav-right .top-btn a.quote_btn {
   text-transform: capitalize;
 }
 
-.card-item .card-top h3, .card-item2 .card-top h3, .counter-area .counter-container .counter-info h4, .service-details-area .service-right-content h3, .service-details-area .inner-text h3, .service-details-area .service-inner-text h3, .blog-details .blog-card .blog-footer .card-details-title, .case-details-area .blog-card .case-content h5 {
+.card-item .card-top h3, .card-item2 .card-top h3, .support-area .store-text h3, .counter-area .counter-container .counter-info h4, .service-details-area .service-right-content h3, .service-details-area .inner-text h3, .service-details-area .service-inner-text h3, .blog-details .blog-card .blog-footer .card-details-title, .case-details-area .blog-card .case-content h5 {
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -347,11 +347,11 @@ header > .home2-header .nav-bar .nav-right .top-btn a.quote_btn {
   margin: 0 auto;
 }
 
-.card-item .card-bottom p, .card-item2 .card-bottom p, .element-item .caption p, .blog-box .inner-content .blog-text p, .working-area .working-left-content p, .skill-area .skill-area-inner-content p, .testimonial-area .client-testimonial .customer-text p, .about-us-area .about-inner-content .last-content p, .project-area .portfolio_wrapper .project-inner-items .element-item .caption p, .home2-testimonial .home2-client-testimonial .customer-text p, .service-details-area .service-content p, .service-details-area .inner-text p, .service-details-area .service-inner-text p, .blog-details .blog-text p, .blog-details .blog-card .blog-footer p, .blog-details .blog-card .blog-footer .quote-text P, .blog-details .blog-card p, .blog-details .comment-area .people-content .people-comment p.default-content, .contact-area .single-contact-box .meta-content p, .contact-area .single-contact-box .meta-content p a, .case-details-area .case-widget-area ul.widget-categorie li span, .case-details-area .blog-card .case-content p {
+.card-item .card-bottom p, .card-item2 .card-bottom p, .element-item .caption p, .blog-box .inner-content .blog-text p, .support-area .store-text p, .newslatter .section-inner .newslatter-content .section-content p, .working-area .working-left-content p, .skill-area .skill-area-inner-content p, .testimonial-area .client-testimonial .customer-text p, .about-us-area .about-inner-content .last-content p, .project-area .portfolio_wrapper .project-inner-items .element-item .caption p, .home2-testimonial .home2-client-testimonial .customer-text p, .service-details-area .service-content p, .service-details-area .inner-text p, .service-details-area .service-inner-text p, .blog-details .blog-text p, .blog-details .blog-card .blog-footer p, .blog-details .blog-card .blog-footer .quote-text P, .blog-details .blog-card p, .blog-details .comment-area .people-content .people-comment p.default-content, .contact-area .single-contact-box .meta-content p, .contact-area .single-contact-box .meta-content p a, .case-details-area .case-widget-area ul.widget-categorie li span, .case-details-area .blog-card .case-content p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 2.4rem;
   color: #7a7a7a;
   margin: 0;
@@ -1684,7 +1684,7 @@ header .header-area .main-nav > ul > li > a.active {
 }
 
 /*--- slider area End---*/
-/*--- Service area ---*/
+/*--- Product area css start---*/
 .product-area .section-heading {
   margin-bottom: 7rem;
 }
@@ -1740,10 +1740,10 @@ header .header-area .main-nav > ul > li > a.active {
 .product-area .cup-box .img-box .order-btn .btn-order {
   font-size: 1.6rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   background: #fec01f;
   padding: 0.5rem 2rem;
-  color: #fff;
+  color: #4e3c3b;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 0;
@@ -1767,20 +1767,21 @@ header .header-area .main-nav > ul > li > a.active {
   transition: all 0.3s ease-in-out;
 }
 
-/*--- Service area End ---*/
-/*--- 21. About Us area ---*/
+/*--- Product area css End ---*/
+/*--- Menu area css start---*/
 .menu-nav-area {
-  background: #eebf3f;
+  background: #4e3c3b;
   padding: 1rem 0;
 }
 
 .menu-nav-area .nav__menus ul li:hover a {
-  border-bottom: 2px solid #262339;
+  text-decoration: underline;
+  color: #83d2e4;
 }
 
 .menu-nav-area .nav__menus ul li a {
   font-size: 1.6rem;
-  color: #262339;
+  color: #ffffff;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
@@ -1788,11 +1789,125 @@ header .header-area .main-nav > ul > li > a.active {
   transition: all 0.3s ease-in-out;
 }
 
-.rs {
-  padding-top: 8.5rem;
+/*--- Menu area css End ---*/
+/*--- Support area css start ---*/
+.support-area .store-support .icon__box {
+  margin-bottom: 2rem;
 }
 
-/*--- About Us area End ---*/
+.support-area .store-support .icon__box i:before {
+  font-size: 6rem;
+  color: #4e3c3b;
+}
+
+.support-area .store-text h3 {
+  margin-bottom: 1rem;
+}
+
+.support-area .store-text p a {
+  color: #4e3c3b;
+}
+
+.support-area .store-text p a:hover {
+  color: #262339;
+  text-decoration: underline;
+}
+
+/*--- Support area css end ---*/
+.newslatter .section-inner {
+  background: #4e3c3b;
+  border-radius: 1rem;
+  padding: 6rem 0;
+}
+
+.newslatter .section-inner .newslatter-content .section-content {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.newslatter .section-inner .newslatter-content .section-content h2 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.newslatter .section-inner .newslatter-content .section-content p {
+  font-size: 1.6rem;
+  color: #7a7a7a;
+}
+
+.newslatter .section-inner .newslatter-content .input-group .form-control {
+  height: 5rem;
+  padding: 0.5rem 2rem;
+  color: #4e3c3b;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.newslatter .section-inner .newslatter-content .input-group .subscribe-btn {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #4e3c3b;
+  background: #fec01f;
+  padding: 0 3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.newslatter .section-inner .newslatter-content .input-group .subscribe-btn:hover {
+  color: #262339;
+}
+
+footer .footer-content {
+  border-top: 1px solid #AEAEAE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 4rem;
+  padding: 0;
+}
+
+footer .footer-content .copy-right {
+  font-size: 1.5rem;
+  color: #4e3c3b;
+  font-weight: 400;
+}
+
+footer .footer-content .copy-right span {
+  font-weight: 600;
+  color: #262339;
+}
+
+footer .footer-content .site-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer-content .site-links ul li {
+  margin-left: 1rem;
+}
+
+footer .footer-content .site-links ul li a {
+  color: #262339;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0.5rem;
+}
+
+footer .footer-content .site-links ul li a:hover {
+  color: #4e3c3b;
+  text-decoration: underline;
+}
+
 /*--- 22. Counter Area ---*/
 .counter-area {
   background: #F5F5F5;
