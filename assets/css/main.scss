@@ -1324,7 +1324,7 @@ button:focus {
     display: none;
     padding: 0.6rem 0.8rem;
     position: fixed;
-    z-index: 9;
+    z-index: 999;
     right: 2rem;
     bottom: 2rem;
     border-radius: 5rem;
@@ -1365,7 +1365,7 @@ button:focus {
         }
         li {
             &:hover a i:before {
-                color: #4e3c3b;
+                color: #8C6239;
             }
             a i::before {
                 @extend %social-icon;
@@ -1410,7 +1410,7 @@ button:focus {
                 .btn-link {
                     text-decoration: none;
                     padding: 0.5rem 2.5rem;
-                    background: #4e3c3b;
+                    background: #8C6239;
                     font-size: 1.5rem;
                     border-radius: 0.3rem;
                     color: $tertiary-color;
@@ -1418,7 +1418,7 @@ button:focus {
                     transition: all 0.3s ease-in-out;
                     &:hover {
                         background: #83d2e4;
-                        color: #4e3c3b;
+                        color: #8C6239;
                     }
                 }
                 .logIn-btn {
@@ -1713,7 +1713,7 @@ header .header-area .main-nav>ul>li>a.active {
                     font-weight: 500;
                     background: #fec01f;
                     padding: 0.5rem 2rem;
-                    color: #4e3c3b;
+                    color: #8C6239;
                     transition: all 0.3s ease-in-out;
                     opacity: 0;
                     &:hover {
@@ -1741,7 +1741,7 @@ header .header-area .main-nav>ul>li>a.active {
 
 /*--- Menu area css start---*/ 
 .menu-nav-area {
-    background: #4e3c3b;
+    background: #8C6239;
     padding: 1rem 0;
     // margin: 6rem 0;
     .nav__menus {
@@ -1776,7 +1776,7 @@ header .header-area .main-nav>ul>li>a.active {
             
             i:before {
                 font-size: 6rem;
-                color: #4e3c3b;
+                color: #8C6239;
             }
         }
     }
@@ -1788,7 +1788,7 @@ header .header-area .main-nav>ul>li>a.active {
         p {
             @extend %inner-desc;
             a {
-                color: #4e3c3b;
+                color: #8C6239;
                 &:hover {
                     color: $secondary-color;
                     text-decoration: underline;
@@ -1801,7 +1801,14 @@ header .header-area .main-nav>ul>li>a.active {
 
 .newslatter {
     .section-inner {
-        background: #4e3c3b;
+        background: linear-gradient(rgba(78, 60, 59, 0.5), rgba(78, 60, 59, 0.5)),
+            url(../images/products/newslatter-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            background-position-x: contain;
+
         border-radius: 1rem;
         padding: 6rem 0;
         .newslatter-content {
@@ -1816,14 +1823,14 @@ header .header-area .main-nav>ul>li>a.active {
                 p {
                     @extend %inner-desc;
                     font-size: 1.6rem;
-                    color: $desc-color;
+                    color: $secondary-color;
                 }
             }
             .input-group {
                 .form-control {
                     height: 5rem;
                     padding: 0.5rem 2rem;
-                    color: #4e3c3b;
+                    color: #8C6239;
                     font-size: 1.8rem;
                     font-weight: 500;
                 }
@@ -1831,7 +1838,7 @@ header .header-area .main-nav>ul>li>a.active {
                     font-size: 2.2rem;
                     font-weight: 600;
                     text-transform: uppercase;
-                    color: #4e3c3b;
+                    color: #8C6239;
                     background: #fec01f;
                     padding: 0 3rem;
                     transition: all 0.3s ease-in-out;
@@ -1847,7 +1854,72 @@ header .header-area .main-nav>ul>li>a.active {
 
 }
 
-footer {
+.footer__area {
+    margin: 6rem 0;
+    background: #4c3722;
+    padding-top: 12rem;
+    .weight-area {
+        .weight {
+            text-align: center;
+            margin-bottom: 5rem;
+            h3 {
+                @extend %section-inner-title;
+                margin-bottom: 2rem;
+                color: $tertiary-color;
+            }
+            ul {
+                // text-align: left;
+                li {
+                    margin-bottom: 0.5rem;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: translateY(-0.5rem);
+                        a {
+                            text-decoration: underline;
+                            color: #83d2e4;
+                        }
+                    }
+                    a {
+                        color: $tertiary-color;
+                        @extend %inner-desc;
+                        text-transform: capitalize;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+
+            .social-links {
+                margin-top: 3rem;
+                ul.footer-social-icon {
+                    margin-top: 2.5rem;
+                    li {
+                        margin-right: 1rem;
+                        &:hover a i:before {
+                            color: #83d2e4;
+                            background: #8C6239;
+                        }
+                        a {
+                            text-decoration: none;
+                            i:before {
+                                font-size: 3rem;
+                                color: #8C6239;
+                                padding: 1rem;
+                                border-radius: 0.5rem;
+                                background: #83d2e4;
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .brand-logo {
+            margin-top: -7rem;
+            img {
+                max-width: 22rem;
+            }
+        }
+    }
     
     .footer-content {
         border-top: 1px solid #AEAEAE;
@@ -1857,11 +1929,11 @@ footer {
         padding: 0;
         .copy-right {
             font-size: 1.5rem;
-            color: #4e3c3b;
+            color: $tertiary-color;
             font-weight: 400;
-            span {
+            a {
                 font-weight: 600;
-                color: $secondary-color;
+                color: #83d2e4;
             }
         }
 
@@ -1872,13 +1944,13 @@ footer {
                 li {
                     margin-left: 1rem;
                     a {
-                        color: $secondary-color;
+                        color: $tertiary-color;
                         font-size: 1.5rem;
                         font-weight: 400;
                         text-transform: capitalize;
                         padding: 0.5rem;
                         &:hover {
-                            color: #4e3c3b;
+                            color: #83d2e4;
                             text-decoration: underline;
                         }
                     }

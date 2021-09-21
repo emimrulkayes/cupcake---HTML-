@@ -286,7 +286,7 @@ header > .home2-header .nav-bar .nav-right .top-btn a.quote_btn {
   text-transform: capitalize;
 }
 
-.card-item .card-top h3, .card-item2 .card-top h3, .support-area .store-text h3, .counter-area .counter-container .counter-info h4, .service-details-area .service-right-content h3, .service-details-area .inner-text h3, .service-details-area .service-inner-text h3, .blog-details .blog-card .blog-footer .card-details-title, .case-details-area .blog-card .case-content h5 {
+.card-item .card-top h3, .card-item2 .card-top h3, .support-area .store-text h3, .footer__area .weight-area .weight h3, .counter-area .counter-container .counter-info h4, .service-details-area .service-right-content h3, .service-details-area .inner-text h3, .service-details-area .service-inner-text h3, .blog-details .blog-card .blog-footer .card-details-title, .case-details-area .blog-card .case-content h5 {
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -347,7 +347,7 @@ header > .home2-header .nav-bar .nav-right .top-btn a.quote_btn {
   margin: 0 auto;
 }
 
-.card-item .card-bottom p, .card-item2 .card-bottom p, .element-item .caption p, .blog-box .inner-content .blog-text p, .support-area .store-text p, .newslatter .section-inner .newslatter-content .section-content p, .working-area .working-left-content p, .skill-area .skill-area-inner-content p, .testimonial-area .client-testimonial .customer-text p, .about-us-area .about-inner-content .last-content p, .project-area .portfolio_wrapper .project-inner-items .element-item .caption p, .home2-testimonial .home2-client-testimonial .customer-text p, .service-details-area .service-content p, .service-details-area .inner-text p, .service-details-area .service-inner-text p, .blog-details .blog-text p, .blog-details .blog-card .blog-footer p, .blog-details .blog-card .blog-footer .quote-text P, .blog-details .blog-card p, .blog-details .comment-area .people-content .people-comment p.default-content, .contact-area .single-contact-box .meta-content p, .contact-area .single-contact-box .meta-content p a, .case-details-area .case-widget-area ul.widget-categorie li span, .case-details-area .blog-card .case-content p {
+.card-item .card-bottom p, .card-item2 .card-bottom p, .element-item .caption p, .blog-box .inner-content .blog-text p, .support-area .store-text p, .newslatter .section-inner .newslatter-content .section-content p, .footer__area .weight-area .weight ul li a, .working-area .working-left-content p, .skill-area .skill-area-inner-content p, .testimonial-area .client-testimonial .customer-text p, .about-us-area .about-inner-content .last-content p, .project-area .portfolio_wrapper .project-inner-items .element-item .caption p, .home2-testimonial .home2-client-testimonial .customer-text p, .service-details-area .service-content p, .service-details-area .inner-text p, .service-details-area .service-inner-text p, .blog-details .blog-text p, .blog-details .blog-card .blog-footer p, .blog-details .blog-card .blog-footer .quote-text P, .blog-details .blog-card p, .blog-details .comment-area .people-content .people-comment p.default-content, .contact-area .single-contact-box .meta-content p, .contact-area .single-contact-box .meta-content p a, .case-details-area .case-widget-area ul.widget-categorie li span, .case-details-area .blog-card .case-content p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1385,7 +1385,7 @@ button:focus {
   display: none;
   padding: 0.6rem 0.8rem;
   position: fixed;
-  z-index: 9;
+  z-index: 999;
   right: 2rem;
   bottom: 2rem;
   border-radius: 5rem;
@@ -1432,7 +1432,7 @@ button:focus {
 }
 
 .header-top ul.topbar-social-icon li:hover a i:before {
-  color: #4e3c3b;
+  color: #8C6239;
 }
 
 .header-top .site-wrapper a img {
@@ -1478,7 +1478,7 @@ button:focus {
 .header-top .top-right li .header-top-btns .btn-link {
   text-decoration: none;
   padding: 0.5rem 2.5rem;
-  background: #4e3c3b;
+  background: #8C6239;
   font-size: 1.5rem;
   border-radius: 0.3rem;
   color: #ffffff;
@@ -1489,7 +1489,7 @@ button:focus {
 
 .header-top .top-right li .header-top-btns .btn-link:hover {
   background: #83d2e4;
-  color: #4e3c3b;
+  color: #8C6239;
 }
 
 .header-top .top-right li .header-top-btns .logIn-btn {
@@ -1772,7 +1772,7 @@ header .header-area .main-nav > ul > li > a.active {
   font-weight: 500;
   background: #fec01f;
   padding: 0.5rem 2rem;
-  color: #4e3c3b;
+  color: #8C6239;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 0;
@@ -1799,7 +1799,7 @@ header .header-area .main-nav > ul > li > a.active {
 /*--- Product area css End ---*/
 /*--- Menu area css start---*/
 .menu-nav-area {
-  background: #4e3c3b;
+  background: #8C6239;
   padding: 1rem 0;
 }
 
@@ -1826,7 +1826,7 @@ header .header-area .main-nav > ul > li > a.active {
 
 .support-area .store-support .icon__box i:before {
   font-size: 6rem;
-  color: #4e3c3b;
+  color: #8C6239;
 }
 
 .support-area .store-text h3 {
@@ -1834,7 +1834,7 @@ header .header-area .main-nav > ul > li > a.active {
 }
 
 .support-area .store-text p a {
-  color: #4e3c3b;
+  color: #8C6239;
 }
 
 .support-area .store-text p a:hover {
@@ -1844,7 +1844,13 @@ header .header-area .main-nav > ul > li > a.active {
 
 /*--- Support area css end ---*/
 .newslatter .section-inner {
-  background: #4e3c3b;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(78, 60, 59, 0.5)), to(rgba(78, 60, 59, 0.5))), url(../images/products/newslatter-bg.png);
+  background: linear-gradient(rgba(78, 60, 59, 0.5), rgba(78, 60, 59, 0.5)), url(../images/products/newslatter-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-position-x: contain;
   border-radius: 1rem;
   padding: 6rem 0;
 }
@@ -1861,13 +1867,13 @@ header .header-area .main-nav > ul > li > a.active {
 
 .newslatter .section-inner .newslatter-content .section-content p {
   font-size: 1.6rem;
-  color: #7a7a7a;
+  color: #262339;
 }
 
 .newslatter .section-inner .newslatter-content .input-group .form-control {
   height: 5rem;
   padding: 0.5rem 2rem;
-  color: #4e3c3b;
+  color: #8C6239;
   font-size: 1.8rem;
   font-weight: 500;
 }
@@ -1876,7 +1882,7 @@ header .header-area .main-nav > ul > li > a.active {
   font-size: 2.2rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #4e3c3b;
+  color: #8C6239;
   background: #fec01f;
   padding: 0 3rem;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1887,7 +1893,85 @@ header .header-area .main-nav > ul > li > a.active {
   color: #262339;
 }
 
-footer .footer-content {
+.footer__area {
+  margin: 6rem 0;
+  background: #4c3722;
+  padding-top: 12rem;
+}
+
+.footer__area .weight-area .weight {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.footer__area .weight-area .weight h3 {
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.footer__area .weight-area .weight ul li {
+  margin-bottom: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__area .weight-area .weight ul li:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+.footer__area .weight-area .weight ul li:hover a {
+  text-decoration: underline;
+  color: #83d2e4;
+}
+
+.footer__area .weight-area .weight ul li a {
+  color: #ffffff;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__area .weight-area .weight .social-links {
+  margin-top: 3rem;
+}
+
+.footer__area .weight-area .weight .social-links ul.footer-social-icon {
+  margin-top: 2.5rem;
+}
+
+.footer__area .weight-area .weight .social-links ul.footer-social-icon li {
+  margin-right: 1rem;
+}
+
+.footer__area .weight-area .weight .social-links ul.footer-social-icon li:hover a i:before {
+  color: #83d2e4;
+  background: #8C6239;
+}
+
+.footer__area .weight-area .weight .social-links ul.footer-social-icon li a {
+  text-decoration: none;
+}
+
+.footer__area .weight-area .weight .social-links ul.footer-social-icon li a i:before {
+  font-size: 3rem;
+  color: #8C6239;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #83d2e4;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__area .weight-area .brand-logo {
+  margin-top: -7rem;
+}
+
+.footer__area .weight-area .brand-logo img {
+  max-width: 22rem;
+}
+
+.footer__area .footer-content {
   border-top: 1px solid #AEAEAE;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1899,18 +1983,18 @@ footer .footer-content {
   padding: 0;
 }
 
-footer .footer-content .copy-right {
+.footer__area .footer-content .copy-right {
   font-size: 1.5rem;
-  color: #4e3c3b;
+  color: #ffffff;
   font-weight: 400;
 }
 
-footer .footer-content .copy-right span {
+.footer__area .footer-content .copy-right a {
   font-weight: 600;
-  color: #262339;
+  color: #83d2e4;
 }
 
-footer .footer-content .site-links ul {
+.footer__area .footer-content .site-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1920,20 +2004,20 @@ footer .footer-content .site-links ul {
           flex-direction: row;
 }
 
-footer .footer-content .site-links ul li {
+.footer__area .footer-content .site-links ul li {
   margin-left: 1rem;
 }
 
-footer .footer-content .site-links ul li a {
-  color: #262339;
+.footer__area .footer-content .site-links ul li a {
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: capitalize;
   padding: 0.5rem;
 }
 
-footer .footer-content .site-links ul li a:hover {
-  color: #4e3c3b;
+.footer__area .footer-content .site-links ul li a:hover {
+  color: #83d2e4;
   text-decoration: underline;
 }
 
