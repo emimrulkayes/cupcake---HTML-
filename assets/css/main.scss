@@ -1321,7 +1321,8 @@ button:focus {
     background: $primary-color;
     color: $tertiary-color;
     cursor: pointer;
-    display: none;
+    // display: none;
+    opacity: 0;
     padding: 0.6rem 0.8rem;
     position: fixed;
     z-index: 999;
@@ -1855,7 +1856,7 @@ header .header-area .main-nav>ul>li>a.active {
 }
 
 .footer__area {
-    margin: 6rem 0;
+    margin-top: 6rem;
     background: #4c3722;
     padding-top: 12rem;
     .weight-area {
