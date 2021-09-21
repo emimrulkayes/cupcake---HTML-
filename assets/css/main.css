@@ -1431,6 +1431,10 @@ button:focus {
   font-size: 1.6rem;
 }
 
+.header-top ul.topbar-social-icon li:hover a i:before {
+  color: #4e3c3b;
+}
+
 .header-top .site-wrapper a img {
   width: 20rem;
   height: auto;
@@ -1465,6 +1469,31 @@ button:focus {
 .header-top .top-right li a {
   font-size: 1.6rem;
   padding-left: 1.5rem;
+}
+
+.header-top .top-right li .header-top-btns {
+  margin-top: 1rem;
+}
+
+.header-top .top-right li .header-top-btns .btn-link {
+  text-decoration: none;
+  padding: 0.5rem 2.5rem;
+  background: #4e3c3b;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  color: #ffffff;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-top .top-right li .header-top-btns .btn-link:hover {
+  background: #83d2e4;
+  color: #4e3c3b;
+}
+
+.header-top .top-right li .header-top-btns .logIn-btn {
+  margin-right: 1rem;
 }
 
 .main-nav.sticky {

@@ -1364,6 +1364,9 @@ button:focus {
             }
         }
         li {
+            &:hover a i:before {
+                color: #4e3c3b;
+            }
             a i::before {
                 @extend %social-icon;
 
@@ -1400,6 +1403,27 @@ button:focus {
             a {
                 font-size: 1.6rem;
                 padding-left: 1.5rem;
+            }
+
+            .header-top-btns {
+                margin-top: 1rem;
+                .btn-link {
+                    text-decoration: none;
+                    padding: 0.5rem 2.5rem;
+                    background: #4e3c3b;
+                    font-size: 1.5rem;
+                    border-radius: 0.3rem;
+                    color: $tertiary-color;
+                    font-weight: 400;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background: #83d2e4;
+                        color: #4e3c3b;
+                    }
+                }
+                .logIn-btn {
+                    margin-right: 1rem;
+                }
             }
         }
     }
