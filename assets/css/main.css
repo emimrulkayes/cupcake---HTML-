@@ -1413,26 +1413,31 @@ button:focus {
   padding: 0.7rem 0;
 }
 
-.header-top ul.topbar-social-icon li.support {
+.header-top ul.topbar-social-icon li {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 0.8rem;
   color: #262339;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
-.header-top ul.topbar-social-icon li.support i::before {
+.header-top ul.topbar-social-icon li a i::before {
   vertical-align: middle;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background: #8C6239;
+  color: #ffffff;
 }
 
 .header-top ul.topbar-social-icon li:hover a i:before {
   color: #8C6239;
+  background: #ffffff;
 }
 
 .header-top .site-wrapper a img {

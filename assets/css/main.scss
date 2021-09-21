@@ -1350,23 +1350,31 @@ button:focus {
     padding: 1.5rem 0;
     ul.topbar-social-icon {
         padding: 0.7rem 0;
-        li.support {
+        li {
             font-family: $secondary-font;
             font-style: normal;
             font-weight: 600;
             font-size: 1.2rem;
             line-height: 0.8rem;
             color: $secondary-color;
-            margin-right: 1.5rem;
-            i::before {
-                vertical-align: middle;
-                align-items: center;
-                font-size: 1.6rem;
+            margin-right: 1rem;
+            a {
+                i::before {
+                    vertical-align: middle;
+                    align-items: center;
+                    font-size: 2rem;
+                    padding: 1rem;
+                    border-radius: 0.3rem;
+                    background: #8C6239;
+                    color: $tertiary-color;
+                }
             }
         }
         li {
             &:hover a i:before {
                 color: #8C6239;
+                background: $tertiary-color;
+
             }
             a i::before {
                 @extend %social-icon;
