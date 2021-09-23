@@ -1730,6 +1730,7 @@ header .header-area .main-nav > ul > li > a.active {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-bottom: 3rem;
+  background: #ffffff;
 }
 
 .product-area .cup-box:hover .img-box::before {
